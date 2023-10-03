@@ -13,21 +13,15 @@ export default function Nav() {
             </div>
 
             {/* Links */}
-            <div>
-                <a href="/games">Games</a>
-            </div>
-            <div>
-                <a href="/blog">Blog</a>
-            </div>
-            <div>
-                <a href="/about">About</a>
-            </div>
+            <a class="font-montserrat text-neutral-100" href="/games">Games</a>
+            <a class="font-montserrat text-neutral-100" href="/blog">Blog</a>
+            <a class="font-montserrat text-neutral-100" href="/about">About</a>
             
             {/* Toggle */}
             <div onClick={() => setToggled((prevToggle) => !prevToggle)} className="space-y-1 cursor-pointer">
-                <span className="block h-0.5 w-8 bg-black"></span>
-                <span className="block h-0.5 w-8 bg-black"></span>
-                <span className="block h-0.5 w-8 bg-black"></span>
+                <span className="block h-0.5 w-8 bg-white"></span>
+                <span className="block h-0.5 w-8 bg-white"></span>
+                <span className="block h-0.5 w-8 bg-white"></span>
             </div>
         </nav>
     )

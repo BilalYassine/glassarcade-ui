@@ -7,9 +7,27 @@ import Nav from '../components/Nav';
     </head>
     <body>
         <main>
-            <Nav></Nav>
+            <header>
+                <Nav></Nav>
+            </header>
             <slot />
             <!-- All the different pages to be rendered -->
         </main>
     </body>
 </html>
+
+<style>
+    a {
+		font-family: 'Montserrat Variable', sans-serif;
+		font-size: 4rem;
+		font-weight: 200;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+    header {
+        background: #353b3f;
+        position: sticky;
+        top: 0;
+    }
+</style>

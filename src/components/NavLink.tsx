@@ -10,7 +10,7 @@ export default function NavLink(obj: string) {
     let width = "62"
 
     if (obj["page"] == 'Games') {
-        link = "/games"
+        link = "https://www.youtube.com/watch?v=xvFZjo5PgG0"
         image = "/images/gaming-icon.png"
         altText = "Games Icon"
         text = "Games"

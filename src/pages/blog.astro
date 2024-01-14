@@ -3,6 +3,7 @@
 import '@fontsource-variable/montserrat';
 import { Image } from 'astro:assets';
 import BlogLayout from "../layouts/blog-layout.astro";
+import Blog from '../components/Blog';
 ---
 
 <BlogLayout>
@@ -14,29 +15,26 @@ import BlogLayout from "../layouts/blog-layout.astro";
 	<br />
 	<br />
 	<h1>Blog</h1>
-	<h2>UNDER CONSTRUCTION</h2>
-	<construction>
-		<img src="/images/construction.png" alt="Construction"/>
-		<br />
-		<img src="/images/construction.png" alt="Construction"/>
-	</construction>
+	<Blog></Blog>
+	<Blog></Blog>
+	<Blog></Blog>
+	<Blog></Blog>
 	<br />
-	<construction>
-		<img src="/images/construction.png" alt="Construction"/>
-		<br />
-		<img src="/images/construction.png" alt="Construction"/>
-	</construction>
+    <br />
+	<br />
+	<br />
 </BlogLayout>
 
 
 <style>
 	h1 {
-		font-family: 'Montserrat Variable', sans-serif;
-		font-size: 4rem;
-		font-weight: 200;
+		font-family: sans-serif;
+		color: #ffffff;
+		font-size: 5rem;
+		font-weight: 400;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
 	}
 	h2 {
 		font-family: 'Montserrat Variable', sans-serif;
@@ -47,7 +45,7 @@ import BlogLayout from "../layouts/blog-layout.astro";
 		margin-bottom: 0.5em;
 	}
 	html {
-		background: #fffbfd;
+		background: #4E7CBE;
 		background-size: 224px;
 		height: 100%;
 		margin: 0;

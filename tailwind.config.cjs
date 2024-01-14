@@ -5,7 +5,10 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'montserrat': ['Montserrat Variable']
-			}
+			},
+			colors:{
+				'primaryBlue': '#4E7CBE'
+			},
 		},
 	},
 	plugins: [],

@@ -13,51 +13,77 @@ import MainLayout from "../layouts/main-layout.astro";
     <br />
 	<br />
 	<br />
-	<h1>Glass Arcade</h1>
-	<h2>UNDER CONSTRUCTION</h2>
-	<construction>
-		<img src="/images/construction.png" alt="Construction"/>
-		<br />
-		<img src="/images/construction.png" alt="Construction"/>
-	</construction>
-	<br />
-	<construction>
-		<img src="/images/construction.png" alt="Construction"/>
-		<br />
-		<img src="/images/construction.png" alt="Construction"/>
-	</construction>
+	<h1>GLASS ARCADE</h1>
+	<h2>We make video games that are fun, digestible, and emotionally resonant. We are working on our first game,</h2>
+	<div class="flex justify-center">
+		<img src="./images/placeholder title.png" alt="WizGuy" width="50%"/>
+		<div class="h-64 w-64 mt-12">
+			<img class="align-center" src="./images/wizguy idle.gif" alt="WizGuy"/>
+		</div>
+	</div>
+	<div class="flex justify-center space-x-16 w-full">
+		<div class="bg-white w-2/6 h-80 rounded-2xl mb-36 mt-16">
+			<br />
+			<h3>Our Vision</h3>
+			<p>To foster a greater appreciation for the art of video games as a unique medium for storytelling through inspiring experiences that emotionally resonate with all players.</p>
+		</div>
+		<div class="bg-white w-2/6 h-80 rounded-2xl mb-36 mt-16">
+			<br />
+			<h3>Our Target</h3>
+			<p>Everyone from daily gamers to never touched a controller. Our Theory is that anyone can love games and we strive to make games that will show beginners why we love games while being deep enough for experienced players.</p>
+		</div>
+	</div>
+	
 </MainLayout>
 
 
 <style>
 	h1 {
-		font-family: 'Montserrat Variable', sans-serif;
-		font-size: 4rem;
-		font-weight: 200;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	h2 {
-		font-family: 'Montserrat Variable', sans-serif;
-		font-size: 2rem;
-		font-weight: 600;
+		font-family: sans-serif;
+		color: #ffffff;
+		font-size: 5rem;
+		font-weight: 400;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 0.5em;
 	}
+	h2 {
+		font-family: sans-serif;
+		color: #ffffff;
+		font-size: 3rem;
+		font-weight: 200;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 0.5em;
+		margin-left: 4em;
+		margin-right: 4em;
+	}
+	h3 {
+		font-family: sans-serif;
+		color: #000000;
+		font-size: 3rem;
+		font-weight: 200;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 0.5em;
+		margin-left: 4em;
+		margin-right: 4em;
+	}
+	p{
+		font-size: 1.5rem;
+		align-items: center;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+		text-align: center;
+	}
 	html {
-		background: #FBFCFF;
+		background: #4E7CBE;
 		background-size: 224px;
 		height: 100%;
 		margin: 0;
 		padding: 0;
 	}
-	img {
-		max-width: 50%;
-		max-height: 50vh;
-		height: auto;
-	}
+
 	construction {
 		display: flex;
 		justify-content: space-between;

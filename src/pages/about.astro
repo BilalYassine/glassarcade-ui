@@ -13,41 +13,78 @@ import AboutLayout from "../layouts/about-layout.astro";
     <br />
 	<br />
 	<br />
-	<h1>About</h1>
-	<h2>UNDER CONSTRUCTION</h2>
-	<construction>
-		<img src="/images/construction.png" alt="Construction"/>
-		<br />
-		<img src="/images/construction.png" alt="Construction"/>
-	</construction>
+	<h1>Who We Are</h1>
+	<div class="w-[89%] mx-auto">
+		<h2>Glass Arcade is just two guys who love video games. 
+			We have been playing games together since we became friends in high school.  
+			Since 2019 when we started our first project together, we have been learning 
+			and practicing everything that goes into making a video game; the design, art, code, and music.  
+			Glass Arcade is our journey towards turning our passion into a living - we hope you will join us on our journey.  </h2>
+	</div>
+	<div class="flex justify-center space-x-8 w-[-89%]">
+		<img class="rounded-2xl" src="./images/robbie.png" alt="Robert"/>
+		<div class="bg-white w-2/4 max-h-fit rounded-2xl">
+			<h3 class="my-8">Meet Rob</h3>
+			<p>Hello. This is where we tell the website about ourselves.</p>
+		</div>
+	</div>
+	<div class="flex justify-center space-x-8 w-full mt-16">
+		<div class="bg-white w-2/4 max-h-fit rounded-2xl ">
+			<h3 class="my-8">Meet Bilal</h3>
+			<p>Hello. This is where we tell the website about ourselves.</p>
+		</div>
+		<img class="rounded-2xl" src="./images/bibo.png" alt="Bilal"/>
+	</div>
+	<!-- These are here until we fix the footer --> 
 	<br />
-	<construction>
-		<img src="/images/construction.png" alt="Construction"/>
-		<br />
-		<img src="/images/construction.png" alt="Construction"/>
-	</construction>
+	<br />
+    <br />
+	<br />
+	<br />
 </AboutLayout>
 
 
 <style>
 	h1 {
-		font-family: 'Montserrat Variable', sans-serif;
-		font-size: 4rem;
-		font-weight: 200;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	h2 {
-		font-family: 'Montserrat Variable', sans-serif;
-		font-size: 2rem;
-		font-weight: 600;
+		font-family: sans-serif;
+		color: #ffffff;
+		font-size: 5rem;
+		font-weight: 400;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 0.5em;
 	}
+	h2 {
+		font-family: 'Montserrat Variable', sans-serif;
+		color: #ffffff;
+		font-size: 1.5rem;
+		font-weight: 600;
+		line-height: 1.5;
+		text-align: center;
+		margin-bottom: 2em;
+		margin-left: 4em;
+		margin-right: 4em;
+	}
+	h3 {
+		font-family: sans-serif;
+		color: #000000;
+		font-size: 2rem;
+		font-weight: 200;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 0.5em;
+		margin-left: 4em;
+		margin-right: 4em;
+	}
+	p{
+		font-size: 1.5rem;
+		align-items: center;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+		text-align: center;
+	}
 	html {
-		background: #FBFCFF;
+		background: #4E7CBE;
 		background-size: 224px;
 		height: 100%;
 		margin: 0;

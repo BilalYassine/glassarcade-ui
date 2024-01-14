@@ -1,5 +1,6 @@
 ---
 import '@fontsource-variable/montserrat';
+import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 ---
 
@@ -13,8 +14,14 @@ import Nav from '../components/Nav';
             </header>
             <slot />
             <!-- All the different pages to be rendered -->
+            
         </main>
     </body>
+    <footer>
+        <div class="flex w-full bg-white">
+            <Footer></Footer>
+        </div>
+    </footer>
 </html>
 
 <style>
@@ -27,11 +34,10 @@ import Nav from '../components/Nav';
 		margin-bottom: 1em;
 	}
     header {
-        background: #353b3f;
+        background: #ffffff;
         position: fixed;
         left: 0;   
         top: 0;      
         width: 100%;  
     }
-    
 </style>

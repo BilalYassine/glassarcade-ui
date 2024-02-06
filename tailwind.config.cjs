@@ -7,7 +7,11 @@ module.exports = {
 				'montserrat': ['Montserrat Variable']
 			},
 			colors:{
-				'primaryBlue': '#4E7CBE'
+				'primaryBlue': '#88D3E1',
+				'primaryRed': '#F04E50',
+				'primaryWhite': '#FFFFFF',
+				'primaryBlack': '#151715',
+				'primaryNavy': '#1C2338',
 			},
 		},
 	},

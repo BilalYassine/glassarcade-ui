@@ -1,40 +1,100 @@
 ---
 import '@fontsource-variable/montserrat';
 import Footer from '../components/Footer';
-import Nav from '../components/Nav';
+import FooterLink from '../components/FooterLink';
 ---
-
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
     <body>
-        <main>
-            <header>
-                <Nav></Nav>
-            </header>
-            <slot />
-            <!-- All the different pages to be rendered -->
-            
-        </main>
+        <header>
+            <nav class="lg:flex lg:justify-between">
+                <div class="flex justify-between items-center">
+                    <div class="items-center ml-8 pb-4">
+                        <a href="/">
+                            <div class="w-[75px] h-[75x] lg:w-[150px] lg:h-[150px]">
+                                <img src="/images/GA-Logo.svg" alt="Glass Arcade"/>
+                            </div>
+                        </a>
+                    </div>
+                    <span class="text-5xl cursor-pointer lg:hidden block mr-6">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+                <ul class="lg:flex lg:justify-end 
+                lg:items-center lg:mr-6 z-[-1] lg:z-auto lg:static
+                absolute w-full pl-8 lg:pl-0 
+                lg:opacity-100 opacity-0 top-[400px] transition-all 
+                ease-in duration-500">
+                    <li class="mx-4 my-6 lg:my-0">
+                        <a href="/games" class="font-montserrat text-white text-2xl hover:text-primaryRed duration-300">Games</a>
+                    </li>
+                    {/* <li>
+                        <p className="font-montserrat text-neutral-950 text-2xl">|</p>
+                    </li> */}
+                    <li class="mx-4 my-6 lg:my-0">
+                        <a href="/about" class="font-montserrat text-white text-2xl hover:text-primaryRed duration-300">About Us</a>
+                    </li>
+                    {/* <li>
+                        <p className="font-montserrat text-neutral-950 text-2xl">|</p>
+                    </li> */}
+                     <li class="mx-4 my-6 lg:my-0">
+                        <a href="/blog" class="font-montserrat text-white text-2xl hover:text-primaryRed duration-300">Blog</a>
+                    </li>
+                    {/* <li>
+                        <p className="font-montserrat text-neutral-950 text-2xl">|</p>
+                    </li> */}
+                    <li class="mx-4 my-6 lg:my-0">
+                        <a href="/follow" class="font-montserrat text-white text-2xl hover:text-primaryRed duration-300">Follow the Journey</a>
+                    </li>
+                        <ul class="relative flex items-center mb-6 lg:mb-0">
+                        <li class="mx-1">
+                            <FooterLink page='Instagram'/>
+                        </li>
+                        <li class="mx-1">
+                            <FooterLink page='Twitter'/>
+                        </li>
+                        <li class="mx-1">
+                            <FooterLink page='Tik Tok'/>
+                        </li>
+                        <li class="mx-1">
+                            <FooterLink page='Youtube'/>
+                        </li>
+                        <li class="mx-1">
+                            <FooterLink page='Twitch'/>
+                        </li>
+                    </ul>
+                    
+                </ul> 
+            </nav>
+            <div class="h-1 bg-primaryBlue">
+
+            </div>
+            <div class="h-1 bg-primaryRed">
+
+            </div>
+              
+            <script>
+                function Menu(e){
+                    let list = document.querySelector('ul');
+
+                    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]'),
+                    list.classList.add('opacity-100')): (e.name = "menu",
+                    list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+                };
+            </script>
+        </header>
+        <slot />
     </body>
-    <footer>
-        <div class="flex w-full bg-white">
-            <Footer></Footer>
-        </div>
-    </footer>
 </html>
 
 <style>
-    a {
-		font-family: 'Montserrat Variable', sans-serif;
-		font-size: 4rem;
-		font-weight: 200;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
     header {
-        background: #ffffff;
+        background: #232C47;
         position: fixed;
         left: 0;   
         top: 0;      

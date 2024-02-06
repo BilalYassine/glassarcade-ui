@@ -4,11 +4,11 @@ export default function FooterLink(obj: string) {
     const [toggled, setToggled] = useState(false)
 
     let link = "/"
-    let image = "/images/logo.png"
+    let image = "/images/GA-Logo.svg"
     let altText = "Glass Arcade"
     let text = ""
-    let width = "100"
-    let height = "100"
+    let width = "200"
+    let height = "200"
 
     if (obj["page"] == 'Games') {
         link = "/games"

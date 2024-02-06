@@ -24,7 +24,7 @@ export default function NavLink(obj: string) {
     }
 
     return (
-        <a class="font-montserrat text-neutral-950 text-2xl hover:text-red-500 hover:translate-y-[-2px]" href={link}>
+        <a class="font-montserrat text-neutral-950 text-2xl hover:text-primaryRed duration-300" href={link}>
             {text}
         </a>
     )

@@ -39,7 +39,7 @@ export default function LargeSocialIcon(obj: string) {
     }
 
     return (
-        <div class="w-40 h-40 hover:bg-red-600 rounded-2xl">
+        <div class="w-40 h-40 hover:bg-primaryRed rounded-2xl">
             <a href={link}>
                 <img src={image} alt={altText}/>
             </a>

@@ -1,0 +1,43 @@
+---
+import FooterLink from './FooterLink'
+import MobileNav from './MobileNav'
+import NavLinks from './NavLinks.astro'
+---
+
+<nav class="flex">
+        {/*Group of icon links to socials*/}
+        <ul class="relative lg:flex hidden items-center lg:w-[33%] lg:ml-6 lg:mb-0">
+            <li class="mx-1">
+                <FooterLink page='Instagram'/>
+            </li>
+            <li class="mx-1">
+                <FooterLink page='Twitter'/>
+            </li>
+            <li class="mx-1">
+                <FooterLink page='Tik Tok'/>
+            </li>
+            <li class="mx-1">
+                <FooterLink page='Youtube'/>
+            </li>
+            <li class="mx-1">
+                <FooterLink page='Twitch'/>
+            </li>
+        </ul>
+        {/*Icon Component that will serve as a link back to the home page*/}
+        <div class="flex justify-center lg:items-center lg:w-[33%] w-full">
+            <a href="/">
+                <div class="w-[125px] h-[125x]">
+                    <img src="/images/GA-Logo.svg" alt="Glass Arcade"/>
+                </div>
+            </a>
+        </div>              
+        {/*Group of links to other pages on the site*/}
+        <ul class="lg:flex hidden lg:items-center lg:justify-end lg:mr-6 lg:w-[33%]">
+            <NavLinks/>
+        </ul> 
+        <div class="lg:hidden block">
+            <MobileNav client:visible/>
+        </div>
+        
+    </nav> 
+

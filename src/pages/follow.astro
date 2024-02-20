@@ -15,41 +15,50 @@ import LargeSocialIcon from '../components/LargeSocialIcon';
 	<br />
 	<br />
 	<h1>Follow us on our Journey!</h1>
-	<div class="w-[89%] mx-auto mt-8">
-		<h2>Part of our vision for a game studio involves giving players a transparent view into what it takes to make a game. 
+	<div class="w-[89%] mx-auto mb-8">
+		<h2 class="mx-8 text-[1.5em] lg:text-[2em] lg:mx-32 mt-8">Part of our vision for a game studio involves giving players a transparent view into what it takes to make a game. 
 			Follow us on social media for updates, or tune into our Twitch stream to 
 			join us on the road to launching our first game!</h2>
 	</div>
-	<div class="flex justify-between w-[90%] m-auto">
-		<div class="bg-white rounded-2xl w-[30%] h-80 mb-16">
-			<br />
-			<div class="flex justify-center space-x-8">
+	<div class="lg:flex lg:justify-between w-[90%] mx-auto ">
+		<div class="bg-white rounded-2xl lg:w-[30%] w-[90%] lg:mx-0 mx-auto lg:h-96 mb-16">
+			<div class="pt-8 flex justify-center space-x-8">
 				<LargeSocialIcon app='Twitter'/>
 				<LargeSocialIcon app='Instagram'/>
 			</div>
-			<h3>For development updates, sneak peaks into progress, and game promotion.</h3>
+			<div class="h-44 flex items-center">
+				<h3 class="p-4 text-[2em]">For development updates, sneak peaks into progress, and game promotion.</h3>
+			</div>	
 		</div>
-		<div class="bg-white rounded-2xl w-[30%] h-80 mb-16">
-			<br />
-			<div class="flex justify-center space-x-8">
+		<div class="bg-white rounded-2xl lg:w-[30%] w-[90%] lg:mx-0 mx-auto lg:h-96 mb-16">
+			<div class="pt-8 flex justify-center space-x-8">
 				<LargeSocialIcon app='Tik Tok'/>
 				<LargeSocialIcon app='Youtube'/>
 			</div>
-			<h3>For short form content following our daily development.</h3>
+			<div class="h-44 flex items-center">
+				<h3 class="p-4 text-[2em] lg:mx-2 mt-2">For short form content following our daily development.</h3>
+			</div>			
 		</div>
-		<div class="bg-white rounded-2xl w-[30%] h-80 mb-16">
-			<br />
-			<div class="flex justify-center space-x-8">
+		<div class="bg-white rounded-2xl lg:w-[30%] w-[90%] lg:mx-0 mx-auto lg:h-96 mb-16">
+			<div class="pt-8 flex justify-center space-x-8">
 				<LargeSocialIcon app='LinkedIn'/>
 			</div>
-			<h3>For studio updates, professional updates, and networking with us.</h3>
+			<div class="h-44 flex items-center">
+				<h3 class="p-4 text-[2em] lg:mx-2 mt-2">For studio updates, professional updates, and networking with us.</h3>
+			</div>
 		</div>
 	</div>
-	<div class="flex justify-center space-x-16 w-[90%] m-auto">
-		<div class="bg-white flex rounded-2xl w-full h-80 mb-16 items-center pl-8">
-			<LargeSocialIcon app='Twitch'/>
-			<h3>
-				Streaming schedule here OR Twitch schedule plugin.
+	<div class="flex justify-center w-[90%] m-auto">
+		<div class="bg-white lg:flex rounded-2xl lg:h-80 mb-16 lg:items-center w-[90%] lg:w-full mx-auto pl-8">
+			<div class="pt-8 flex justify-center space-x-8">
+				<LargeSocialIcon app='Twitch'/>
+			</div>
+			<h3 class="p-4 text-[2em]">
+				Tune in to our Twitch stream! We will be live streaming our collaborative development process on: <br> <br>
+				Tuesday: 1:00-3:30 PM EST <br>
+				Wednesday: 1:00-3:30 PM EST <br>
+				Thursday: 1:00-3:30 PM EST <br>
+
 			</h3>
 		</div>
 	</div>
@@ -60,54 +69,32 @@ import LargeSocialIcon from '../components/LargeSocialIcon';
 	h1 {
 		font-family: sans-serif;
 		color: #ffffff;
-		font-size: 5rem;
+		font-size: 3rem;
 		font-weight: 400;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 0.5em;
 	}
 	h2 {
-		font-family: 'Montserrat Variable', sans-serif;
+		font-family: sans-serif;
 		color: #ffffff;
-		font-size: 1.5rem;
-		font-weight: 600;
-		line-height: 1.5;
-		text-align: center;
-		margin-bottom: 2em;
-		margin-left: 4em;
-		margin-right: 4em;
+		line-height: 1;
+		text-align: left;
 	}
 	h3 {
 		font-family: sans-serif;
 		color: #000000;
-		font-size: 1.5rem;
 		font-weight: 200;
 		line-height: 1;
+		text-align: left;
+	}
+	p{
+		font-size: 1rem;
 		text-align: center;
-		margin-top: 1.5em;
-		margin-bottom: 0.5em;
-		margin-left: 0.5em;
-		margin-right: 0.5em;
+		color: #fffff;
 	}
 	html {
-		background: #4E7CBE;
-		background-size: 224px;
+		background: #000000;
 		height: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	construction {
-		display: flex;
-		justify-content: space-between;
-		margin: 0;
-		padding: 0;
-		max-width: 100%;
-		max-height: 100vh;
-		height: auto;
-	}
-	logo {
-		display: grid;
-		place-items: center;
-		height: 50vh;
 	}
 </style>

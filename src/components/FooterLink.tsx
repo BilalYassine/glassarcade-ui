@@ -33,7 +33,7 @@ export default function FooterLink(obj: string) {
     }
     else if (obj["page"] == 'Instagram') {
         link = "https://www.instagram.com/glass_arcade_/"
-        image = "/images/instagram.png"
+        image = "/images/socials/instagram.svg"
         altText = "Instagram"
         text = ""
         width = "40"
@@ -41,7 +41,7 @@ export default function FooterLink(obj: string) {
     }
     else if (obj["page"] == 'Twitter') {
         link = "https://twitter.com/glass_arcade0"
-        image = "/images/twitter.png"
+        image = "/images/socials/twitter.svg"
         altText = "Twitter"
         text = ""
         width = "40"
@@ -49,7 +49,7 @@ export default function FooterLink(obj: string) {
     }
     else if(obj["page"] == 'Tik Tok'){
         link = 'https://www.tiktok.com/@glass.arcade'
-        image = "/images/tiktok.png"
+        image = "/images/socials/tiktok.svg"
         altText = "Tik Tok"
         text = ""
         width = "40"
@@ -57,7 +57,7 @@ export default function FooterLink(obj: string) {
     }
     else if(obj["page"] == 'Youtube'){
         link = 'https://www.youtube.com/@GlassArcade'
-        image = "/images/youtube.png"
+        image = "/images/socials/youtube.svg"
         altText = "Youtube"
         text = ""
         width = "40"
@@ -65,7 +65,7 @@ export default function FooterLink(obj: string) {
     }
     else if(obj["page"] == 'Twitch'){
         link = 'https://www.twitch.tv/glassarcade'
-        image = "/images/twitch.png"
+        image = "/images/socials/twitch.svg"
         altText = "Twitch"
         text = ""
         width = "40"

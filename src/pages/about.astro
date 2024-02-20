@@ -14,26 +14,44 @@ import AboutLayout from "../layouts/about-layout.astro";
 	<br />
 	<br />
 	<h1>Who We Are</h1>
-	<div class="w-[89%] mx-auto">
-		<h2>Glass Arcade is just two guys who love video games. 
-			We have been playing games together since we became friends in high school.  
+	<div class="w-[89%] mx-auto mb-8">
+		<h2 class="mx-4 text-[1.5em] lg:text-[2em] lg:mx-32 mt-8">Glass Arcade is two friends who love video games. 
+			We have been playing games together since we met in high school.  
 			Since 2019 when we started our first project together, we have been learning 
 			and practicing everything that goes into making a video game; the design, art, code, and music.  
 			Glass Arcade is our journey towards turning our passion into a living - we hope you will join us on our journey.  </h2>
 	</div>
-	<div class="lg:flex lg:justify-center lg:space-x-8 w-[-89%]">
-		<img class="m-auto rounded-2xl" src="./images/robbie.png" alt="Robert"/>
-		<div class="bg-white lg:mx-auto lg:w-2/4 max-h-fit rounded-2xl">
-			<h3 class="my-8">Meet Rob</h3>
-			<p>Hello. This is where we tell the website about ourselves.</p>
+	<div class="flex justify-center mb-8">
+		<div class="space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
+			<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
+				<img class="m-auto rounded-2xl" src="./images/robbie.png" alt="Robert"/>
+			</div>
+			<div class="bg-white border-primaryBlue border-8 lg:mx-auto lg:w-[60%] lg:max-h-fit rounded-2xl">
+				<h3 class="pt-4">Meet Rob</h3>
+				<p class="p-4">Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+				</p>
+			</div>
 		</div>
 	</div>
-	<div class="flex justify-center space-x-8 w-full mt-16">
-		<div class="bg-white w-2/4 max-h-fit rounded-2xl ">
-			<h3 class="my-8">Meet Bilal</h3>
-			<p>Hello. This is where we tell the website about ourselves.</p>
+	<div class="flex justify-center">
+		<div class=" space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
+			<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
+				<img class="m-auto rounded-2xl" src="./images/bibo.png" alt="Bilal"/>
+			</div>
+			<div class="bg-white border-primaryRed border-8 lg:mx-auto lg:w-[60%] max-h-fit rounded-2xl">
+				<h3 class="pt-4">Meet Bilal</h3>
+				<p class="p-4">Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+				</p>
+			</div>
 		</div>
-		<img class="rounded-2xl" src="./images/bibo.png" alt="Bilal"/>
 	</div>
 	<!-- These are here until we fix the footer --> 
 	<br />
@@ -52,58 +70,28 @@ import AboutLayout from "../layouts/about-layout.astro";
 		font-weight: 400;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 0.5em;
 	}
 	h2 {
 		font-family: sans-serif;
 		color: #ffffff;
-		font-size: 1rem;
 		line-height: 1;
-		text-align: center;
-		margin-bottom: 0.5em;
+		text-align: left;
 	}
 	h3 {
 		font-family: sans-serif;
 		color: #000000;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-weight: 200;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 0.5em;
-		margin-left: 4em;
-		margin-right: 4em;
 	}
 	p{
 		font-size: 1.5rem;
-		align-items: center;
-		margin-left: 1.5em;
-		margin-right: 1.5em;
-		text-align: center;
+		text-align: left;
+		color: #000000;
 	}
 	html {
-		background: #4E7CBE;
-		background-size: 224px;
+		background: #000000;
 		height: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	img {
-		max-width: 50%;
-		max-height: 50vh;
-		height: auto;
-	}
-	construction {
-		display: flex;
-		justify-content: space-between;
-		margin: 0;
-		padding: 0;
-		max-width: 100%;
-		max-height: 100vh;
-		height: auto;
-	}
-	logo {
-		display: grid;
-		place-items: center;
-		height: 50vh;
 	}
 </style>

@@ -8,17 +8,17 @@ import GamesLayout from "../layouts/games-layout.astro";
 <GamesLayout>
 	<div class="w-full flex justify-center z-0 pt-[110px]">
 		<div class="w-full relative z-[-2]">
-			<img src="./images/games banner.png" alt="Banner"/>
+			<img src="./images/animated banner.gif" alt="Banner"/>
 			<div class="absolute inset-0 flex justify-center items-center z-[1]">
-				<h1 class="text-5xl lg:text-8xl font-bold">TITLE OF GAME</h1>
+				<img class="mx-auto w-[40%] align-middle lg:mx-0 lg:w-[48%]" src="./images/placeholder title.png" alt="WizGuy"/>
 			</div>  
 		</div>
 	</div>
 	<div class="w-full justify-center bg-black">
-		<h2 class ="mx-4 lg:mx-60 mt-16 scroll-mb-96">Title of Game is Glass Arcades first game in development.</h2>
-		<h2 class ="mx-4 lg:mx-60 mt-16 scroll-mb-96">It is a coming of age story centered on dynamic 2D platforming gameplay that evolves with your character.  It is a blend of all of our favorite styles of gameplay with inspirations from metroidvanias, puzzlers, run n guns, and traditional sidescrollers. </h2>
+		<h2 class ="mx-16 text-[1.5em] lg:text-[2em] lg:mx-60 mt-16">Title of Game is Glass Arcades first game in development.</h2>
+		<h2 class ="mx-16 text-[1.5em] lg:text-[2em] lg:mx-60 mt-16">A magical 2D platforming adventure with dynamic gameplay that evolves with the story.  It is a blend of all of our favorite styles of gameplay with inspirations from metroidvanias, and traditional sidescrollers. </h2>
 	</div>
-	<div class="lg:flex lg:justify-center lg:space-x-16 w-full">
+	<!-- <div class="lg:flex lg:justify-center lg:space-x-16 w-full">
 		<div class="bg-white rounded-2xl lg:w-1/4 w-3/4 mx-auto lg:mx-0 h-80 mb-16 mt-16">
 			<br />
 			<h3>Platforming</h3>
@@ -31,9 +31,9 @@ import GamesLayout from "../layouts/games-layout.astro";
 			<br />
 			<h3>Story</h3>
 		</div>
-	</div>
+	</div> -->
 	<div class="w-full justify-center bg-black">
-		<h2 class ="mx-4 lg:mx-60 scroll-mb-96">Stay tuned for the launch of our Steam page to add Title of Game to your wishlist!</h2>
+		<h2 class ="mx-16 text-[1.5em] lg:text-[2em] lg:mx-60 mt-16">Stay tuned for the launch of our Steam page to add Title of Game to your wishlist!</h2>
 	</div>
 	<br />
 	<br />
@@ -45,50 +45,35 @@ import GamesLayout from "../layouts/games-layout.astro";
 	h1 {
 		font-family: sans-serif;
 		color: #ffffff;
+		font-size: 3rem;
 		font-weight: 400;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 0.5em;
 	}
 	h2 {
-		font-family: 'Montserrat Variable', sans-serif;
+		font-family: sans-serif;
 		color: #ffffff;
-		font-size: 1.5rem;
-		font-weight: 600;
-		line-height: 1.5;
-		text-align: justify;
+		line-height: 1;
+		text-align: left;
 		margin-bottom: 0.5em;
 	}
 	h3 {
 		font-family: sans-serif;
-		color: #000000;
-		font-size: 2rem;
+		color: #ffffff;
+		font-size: 1.5rem;
 		font-weight: 200;
 		line-height: 1;
 		text-align: center;
+		margin-bottom: 0.5em;
+	}
+	p{
+		font-size: 1rem;
+		text-align: center;
+		color: #fffff;
 	}
 	html {
 		background: #000000;
-		background-size: 224px;
 		height: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	img {
-		max-width: 100%;
-	}
-	construction {
-		display: flex;
-		justify-content: space-between;
-		margin: 0;
-		padding: 0;
-		max-width: 100%;
-		max-height: 100vh;
-		height: auto;
-	}
-	logo {
-		display: grid;
-		place-items: center;
-		height: 50vh;
 	}
 </style>

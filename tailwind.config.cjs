@@ -11,9 +11,12 @@ module.exports = {
 				'primaryRed': '#F04E50',
 				'primaryWhite': '#FFFFFF',
 				'primaryBlack': '#151715',
-				'primaryNavy': '#1C2338',
+				'primaryNavy': '#232C47',
 			},
 		},
+		screens:{
+			'lg' : '1260px'
+		}
 	},
 	plugins: [],
 }

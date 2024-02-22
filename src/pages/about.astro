@@ -13,7 +13,7 @@ import AboutLayout from "../layouts/about-layout.astro";
     <br />
 	<br />
 	<br />
-	<h1>Who We Are</h1>
+	<h1>Who Are We?</h1>
 	<div class="w-[89%] mx-auto mb-8">
 		<h2 class="mx-4 text-[1.5em] lg:text-[2em] lg:mx-32 mt-8">Glass Arcade is two friends who love video games. 
 			We have been playing games together since we met in high school.  
@@ -21,27 +21,33 @@ import AboutLayout from "../layouts/about-layout.astro";
 			and practicing everything that goes into making a video game; the design, art, code, and music.  
 			Glass Arcade is our journey towards turning our passion into a living - we hope you will join us on our journey.  </h2>
 	</div>
-	<div class="flex justify-center mb-8">
+	{/*Desktop - doing this as a quick fix now so that on desktop
+	we can do the more aesthetic picture flip thing but then on 
+	mobile have Bilal's picture be stacked on top of his text*/}
+	<div class="hidden lg:flex justify-center mb-8">
 		<div class="space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
 			<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
 				<img class="m-auto rounded-2xl" src="./images/robbie.png" alt="Robert"/>
 			</div>
 			<div class="bg-white border-primaryBlue border-8 lg:mx-auto lg:w-[60%] lg:max-h-fit rounded-2xl">
 				<h3 class="pt-4">Meet Rob</h3>
-				<p class="p-4">Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
-					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
-					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
-					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
-					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+				<p class="p-4"> Hi friends! I have a background in technology consulting where I spend time 
+					doing project management, product, and tech strategy for ecommerce sites.  While I enjoyed the 
+					work and learned a lot, I have always felt drawn to video game design.  More than anything, I just love
+					creating things; I think expressing our creativity in whatever way we feel called is one of the coolest
+					things about being human.  As a co-founder of Glass Arcade, I am excited to continue bringing my ideas to life 
+					to create memorable games for all.
+
+					  <br><br>
+					  <bold>Education: </bold>Integrated Business and Engineering at The Ohio State University.<br>
+					  <bold>City: </bold>Chicago<br>
+					  <bold>Favorite Indie Games: </bold>Outer Wilds, Hades, Ori, Celeste, Dead Cells, Baba Is You (I could go on forever)
 				</p>
 			</div>
 		</div>
 	</div>
-	<div class="flex justify-center">
+	<div class="hidden lg:flex justify-center">
 		<div class=" space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
-			<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
-				<img class="m-auto rounded-2xl" src="./images/bibo.png" alt="Bilal"/>
-			</div>
 			<div class="bg-white border-primaryRed border-8 lg:mx-auto lg:w-[60%] max-h-fit rounded-2xl">
 				<h3 class="pt-4">Meet Bilal</h3>
 				<p class="p-4">Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
@@ -51,8 +57,56 @@ import AboutLayout from "../layouts/about-layout.astro";
 					Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
 				</p>
 			</div>
+			<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
+				<img class="m-auto rounded-2xl" src="./images/bibo.png" alt="Bilal"/>
+			</div>
 		</div>
 	</div>
+	{/*Mobile - doing this as a quick fix now so that on desktop
+	we can do the more aesthetic picture flip thing but then on 
+	mobile have Bilal's picture be stacked on top of his text*/}
+	<div class="lg:hidden">
+		<div class="flex justify-center mb-8">
+			<div class="space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
+				<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
+					<img class="m-auto rounded-2xl" src="./images/robbie.png" alt="Robert"/>
+				</div>
+				<div class="bg-white border-primaryBlue border-8 lg:mx-auto lg:w-[60%] lg:max-h-fit rounded-2xl">
+					<h3 class="pt-4">Meet Rob</h3>
+					<p class="p-4">
+						Hi friends! I have a background in technology consulting where I spend time 
+					doing project management, product, and tech strategy for ecommerce sites.  While I enjoyed the 
+					work and learned a lot, I have always felt drawn to video game design.  More than anything, I just love
+					creating things; I think expressing our creativity in whatever way we feel called is one of the coolest
+					things about being human.  As a co-founder of Glass Arcade, I am excited to continue bringing my ideas to life 
+					to create memorable games for all.
+
+					  <br><br>
+					  <bold>Education: </bold>Integrated Business and Engineering at The Ohio State University.<br>
+					  <bold>City: </bold>Chicago<br>
+					  <bold>Favorite Indie Games: </bold>Outer Wilds, Hades, Ori, Celeste, Dead Cells, Baba Is You (I could go on forever)
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flex justify-center">
+			<div class=" space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
+				<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
+					<img class="m-auto rounded-2xl" src="./images/bibo.png" alt="Bilal"/>
+				</div>
+				<div class="bg-white border-primaryRed border-8 lg:mx-auto lg:w-[60%] max-h-fit rounded-2xl">
+					<h3 class="pt-4">Meet Bilal</h3>
+					<p class="p-4">Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+						Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+						Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+						Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+						Hello. This is where we tell the website about ourselves. Hello. This is where we tell the website about ourselves.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<!-- These are here until we fix the footer --> 
 	<br />
 	<br />
@@ -80,8 +134,8 @@ import AboutLayout from "../layouts/about-layout.astro";
 	h3 {
 		font-family: sans-serif;
 		color: #000000;
-		font-size: 1.5rem;
-		font-weight: 200;
+		font-size: 2.5rem;
+		font-weight: bold;
 		line-height: 1;
 		text-align: center;
 	}
@@ -89,6 +143,9 @@ import AboutLayout from "../layouts/about-layout.astro";
 		font-size: 1.5rem;
 		text-align: left;
 		color: #000000;
+	}
+	bold{
+		font-weight: bold;
 	}
 	html {
 		background: #000000;

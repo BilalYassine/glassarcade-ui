@@ -18,10 +18,6 @@ export default function NavLink(obj: string) {
         link = "/about"
         text = "About Us"
     }
-    else if (obj["page"] == 'Follow') {
-        link = "/follow"
-        text = "Follow The Journey"
-    }
 
     return (
         <a class="font-montserrat text-neutral-950 text-2xl hover:text-primaryRed duration-300" href={link}>

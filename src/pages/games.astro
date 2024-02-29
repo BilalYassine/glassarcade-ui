@@ -9,35 +9,22 @@ import GamesLayout from "../layouts/games-layout.astro";
 	<div class="w-full flex justify-center z-0 pt-[110px]">
 		<div class="w-full relative z-[-2]">
 			<img src="./images/animated banner.gif" alt="Banner"/>
-			<div class="absolute inset-0 flex justify-center items-center z-[1]">
-				<img class="mx-auto w-[40%] align-middle lg:mx-0 lg:w-[48%]" src="./images/placeholder title.png" alt="WizGuy"/>
+			<div class="absolute inset-0 flex flex-col justify-left items-left z-[1] mt-10">
+				<div class="flex m-10">
+					<h2>WizGuy</h2>
+				</div>
+				<hr class="w-64 h-0.5 bg-white border-0 rounded" style="margin-top: -1.5rem; margin-left: 2.5rem;">
+				<div class="flex flex-col items-start m-10">
+					<h3 class="text-[1em] lg:text-[2em] my-8">Title of Game is Glass Arcades' first game in development.</h3>
+					<br />
+					<h3 class="text-[1em] lg:text-[2em] my-8">A whimsical 2D platforming adventure with dynamic gameplay that evolves with the story</h3>
+					<br />
+					<br />
+					<h3 class="text-[1em] lg:text-[2em] my-8">Stay tuned for the launch of our Steam page to add it to your wishlist!</h3>
+				</div>
 			</div>  
 		</div>
 	</div>
-	<div class="w-full justify-center bg-black">
-		<h2 class ="mx-16 text-[1.5em] lg:text-[2em] lg:mx-60 mt-16">Title of Game is Glass Arcades' first game in development.</h2>
-		<h2 class ="mx-16 text-[1.5em] lg:text-[2em] lg:mx-60 mt-16">It is a magical 2D platforming adventure with dynamic gameplay that evolves with the story.  
-			It is a blend of all of our favorite styles of gameplay with inspirations from metroidvanias, puzzlers, and traditional sidescrollers. </h2>
-	</div>
-	<!-- <div class="lg:flex lg:justify-center lg:space-x-16 w-full">
-		<div class="bg-white rounded-2xl lg:w-1/4 w-3/4 mx-auto lg:mx-0 h-80 mb-16 mt-16">
-			<br />
-			<h3>Platforming</h3>
-		</div>
-		<div class="bg-white rounded-2xl lg:w-1/4 w-3/4 mx-auto lg:mx-0 h-80 mb-16 mt-16">
-			<br />
-			<h3>Puzzles</h3>
-		</div>
-		<div class="bg-white rounded-2xl lg:w-1/4 w-3/4 mx-auto lg:mx-0 h-80 mb-16 mt-16">
-			<br />
-			<h3>Story</h3>
-		</div>
-	</div> -->
-	<div class="w-full justify-center bg-black">
-		<h2 class ="mx-16 text-[1.5em] lg:text-[2em] lg:mx-60 mt-16">Stay tuned for the launch of our Steam page to add Title of Game to your wishlist!</h2>
-	</div>
-	<br />
-	<br />
 
 </GamesLayout>
 
@@ -46,27 +33,33 @@ import GamesLayout from "../layouts/games-layout.astro";
 	h1 {
 		font-family: sans-serif;
 		color: #ffffff;
-		font-size: 3rem;
+		font-size: 5rem;
 		font-weight: 400;
 		line-height: 1;
-		text-align: center;
-		margin-bottom: 0.5em;
+		text-align: left;
 	}
 	h2 {
 		font-family: sans-serif;
 		color: #ffffff;
+		font-size: 3.5rem;
 		line-height: 1;
 		text-align: left;
-		margin-bottom: 0.5em;
 	}
 	h3 {
 		font-family: sans-serif;
 		color: #ffffff;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-weight: 200;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 0.5em;
+	}
+	h4 {
+		font-family: sans-serif;
+		color: #ffffff;
+		font-size: 1.25rem;
+		font-weight: 200;
+		line-height: 1;
+		text-align: center;
 	}
 	p{
 		font-size: 1rem;
@@ -74,7 +67,7 @@ import GamesLayout from "../layouts/games-layout.astro";
 		color: #fffff;
 	}
 	html {
-		background: #000000;
+		background: #131313;
 		height: 100%;
 	}
 </style>

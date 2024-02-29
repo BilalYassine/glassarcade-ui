@@ -7,8 +7,6 @@ export default function Nav() {
         <footer className="flex bottom-0 items-center space-x-3 py-2 ml-6">
             <FooterLink page='Instagram'/>
             <FooterLink page='Twitter'/>
-            <FooterLink page='Tik Tok'/>
-            <FooterLink page='Youtube'/>
             <FooterLink page='Twitch'/>
         </footer>
     )

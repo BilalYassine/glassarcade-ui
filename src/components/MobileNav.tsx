@@ -22,7 +22,7 @@ export default function MobileHeader(){
             </svg>
         </button>
         <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
-            <Dialog.Panel className="fixed top-0 left-0 h-screen w-screen bg-black border-r-primaryBlue border-r-8 flex flex-col">
+            <Dialog.Panel className="fixed top-0 left-0 h-screen w-screen bg-[#131313] border-r-primaryBlue border-r-8 flex flex-col">
                 <button onClick={() => setIsOpen(false)}>
                     <svg xmlns="http://www.w3.org/2000/svg" 
                         fill="none" 
@@ -41,30 +41,18 @@ export default function MobileHeader(){
                             <img src="/images/GA-Logo.svg" alt="Glass Arcade"/>
                         </div>
                     </a>
-                    <li>
                         <a href="/games" class="font-montserrat text-white text-xl hover:text-primaryRed duration-300">Games</a>
-                    </li>
-                    <li>
+
                         <a href="/about" class="font-montserrat text-white text-xl hover:text-primaryRed duration-300">About Us</a>
-                    </li>
                     {/* <li>
                         <a href="/blog" class="font-montserrat text-white text-xl hover:text-primaryRed duration-300">Blog</a>
                     </li> */}
-                    <li>
-                        <a href="/follow" class="font-montserrat text-white text-xl hover:text-primaryRed duration-300">Follow the Journey</a>
-                    </li>
                     <ul class="relative flex items-center mb-0">
                         <li class="mx-1">
                             <FooterLink page='Instagram'/>
                         </li>
                         <li class="mx-1">
                             <FooterLink page='Twitter'/>
-                        </li>
-                        <li class="mx-1">
-                            <FooterLink page='Tik Tok'/>
-                        </li>
-                        <li class="mx-1">
-                            <FooterLink page='Youtube'/>
                         </li>
                         <li class="mx-1">
                             <FooterLink page='Twitch'/>

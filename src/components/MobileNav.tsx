@@ -10,7 +10,7 @@ export default function MobileHeader(){
     return(
     <>
         <button onClick={() => setIsOpen(true)}>
-            <svg xmlns="http://www.w3.org/2000/svg" 
+            <svg xmlns="https://www.w3.org/2000/svg" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 strokeWidth={1.75} 
@@ -24,7 +24,7 @@ export default function MobileHeader(){
         <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
             <Dialog.Panel className="fixed top-0 left-0 h-screen w-screen bg-[#131313] border-r-primaryBlue border-r-8 flex flex-col">
                 <button onClick={() => setIsOpen(false)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    <svg xmlns="https://www.w3.org/2000/svg" 
                         fill="none" 
                         viewBox="0 0 24 24" 
                         strokeWidth={1.5} 
@@ -67,7 +67,7 @@ export default function MobileHeader(){
     function switchButtons(){
         if(isOpen){
             return(
-                <svg xmlns="http://www.w3.org/2000/svg" 
+                <svg xmlns="https://www.w3.org/2000/svg" 
                         fill="none" 
                         viewBox="0 0 24 24" 
                         strokeWidth={1.5} 
@@ -81,7 +81,7 @@ export default function MobileHeader(){
         }
         else{
             return(
-                <svg xmlns="http://www.w3.org/2000/svg" 
+                <svg xmlns="https://www.w3.org/2000/svg" 
                     fill="none" 
                     viewBox="0 0 24 24" 
                     strokeWidth={1.75} 

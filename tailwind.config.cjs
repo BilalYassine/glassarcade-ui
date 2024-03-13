@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'montserrat': ['Montserrat Variable']
+				'poppins': ['Poppins']
 			},
 			colors:{
 				'primaryBlue': '#88D3E1',

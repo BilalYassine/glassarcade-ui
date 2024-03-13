@@ -1,6 +1,7 @@
 ---
 // Supports weights 100-900
 import '@fontsource-variable/montserrat';
+import '@fontsource/poppins';
 import { Image } from 'astro:assets';
 import AboutLayout from "../layouts/about-layout.astro";
 ---
@@ -8,12 +9,11 @@ import AboutLayout from "../layouts/about-layout.astro";
 <AboutLayout>
 	<div class="mt-36 mx-12">
 		<h1>Who Are We?</h1>
-	<div class="w-[89%] mx-auto mb-8">
-		<h2 class="mx-4 text-[1.5em] lg:text-[2em] lg:mx-32 mt-8">Glass Arcade is two friends who love video games. 
-			We have been playing games together since we met in high school.  
-			Since 2019 when we started our first project together, we have been learning 
-			and practicing everything that goes into making a video game; the design, art, code, and music.  
-			Glass Arcade is our journey towards turning our passion into a living - we hope you will join us on our journey.  </h2>
+	<div class="lg:w-[85%]  w-[100%] mx-auto mb-8">
+		<h2 class="text-[1.5em] lg:text-[2em] mt-8">We are two friends who have been playing games together since we met in high school.  
+			For years, we have been learning 
+			and practicing everything that goes into making a video game.  
+			Glass Arcade us turning our passion into a living - we hope you will join us on our journey.  </h2>
 	</div>
 	{/*Desktop - doing this as a quick fix now so that on desktop
 	we can do the more aesthetic picture flip thing but then on 
@@ -61,8 +61,8 @@ import AboutLayout from "../layouts/about-layout.astro";
 	mobile have Bilal's picture be stacked on top of his text*/}
 	<div class="lg:hidden">
 		<div class="flex justify-center mb-8">
-			<div class="space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
-				<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
+			<div class="space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[100%]">
+				<div class="w-[100%] lg:w-[40%] m-auto lg:m-0">
 					<img class="m-auto rounded-2xl" src="/images/robbie.png" alt="Robert"/>
 				</div>
 				<div class="bg-[#27282a] border-primaryBlue border-8 lg:mx-auto lg:w-[60%] lg:max-h-fit rounded-2xl">
@@ -84,8 +84,8 @@ import AboutLayout from "../layouts/about-layout.astro";
 			</div>
 		</div>
 		<div class="flex justify-center">
-			<div class=" space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
-				<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
+			<div class=" space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[100%]">
+				<div class="w-[100%] lg:w-[40%] m-auto lg:m-0">
 					<img class="m-auto rounded-2xl" src="/images/bibo.png" alt="Bilal"/>
 				</div>
 				<div class="bg-[#27282a] border-primaryRed border-8 lg:mx-auto lg:w-[60%] max-h-fit rounded-2xl">
@@ -101,33 +101,36 @@ import AboutLayout from "../layouts/about-layout.astro";
 		</div>
 	</div>
 	</div>
+	<br>
+	<br>
 </AboutLayout>
 
 
 <style>
 	h1 {
-		font-family: sans-serif;
+		font-family: 'poppins';
 		color: #ffffff;
 		font-size: 3rem;
-		font-weight: 400;
+		font-weight: 600;
 		line-height: 1;
 		text-align: center;
 	}
 	h2 {
-		font-family: sans-serif;
+		font-family: 'poppins';
 		color: #ffffff;
-		line-height: 1;
+		line-height: 1.2;
 		text-align: left;
 	}
 	h3 {
-		font-family: sans-serif;
+		font-family: 'poppins';
 		color: #ffffff;
 		font-size: 2.5rem;
-		font-weight: bold;
+		font-weight: 400;
 		line-height: 1;
 		text-align: center;
 	}
 	p{
+		font-family: 'poppins';
 		font-size: 1.5rem;
 		text-align: left;
 		color: #ffffff;

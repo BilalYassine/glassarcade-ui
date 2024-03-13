@@ -1,4 +1,5 @@
 import { useState } from "react"
+import '@fontsource/poppins';
 
 export default function NavLink(obj: string) {
     const [toggled, setToggled] = useState(false)
@@ -20,7 +21,7 @@ export default function NavLink(obj: string) {
     }
 
     return (
-        <a class="font-montserrat text-neutral-950 text-2xl hover:text-primaryRed duration-300" href={link}>
+        <a class="font-poppins text-neutral-950 text-2xl hover:text-primaryRed duration-300" href={link}>
             {text}
         </a>
     )

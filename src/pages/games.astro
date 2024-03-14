@@ -7,29 +7,26 @@ import GamesLayout from "../layouts/games-layout.astro";
 ---
 
 <GamesLayout>
-	<div class="w-full flex justify-center z-0 pt-[50px]">
-		<div class="w-full relative z-[-2]">
-			<img src="/images/GameBanner.png" alt="Banner"/>
-			<div class="absolute inset-0 flex flex-col justify-left items-left z-[1] mt-10">
-				<div class="flex justify-center m-10">
-					<h2>NAME OF GAME</h2>
-				</div>
-				<div class="flex flex-col items-start m-10 bg-black bg-opacity-40 rounded-2xl p-4">
-					<h3 class="text-[1em] lg:text-[2em] lg:my-8">Title of Game is Glass Arcades' first game in development.</h3>
-					<br />
-					<h3 class="text-[1em] lg:text-[2em] lg:my-8">A magical 2D platforming adventure with dynamic gameplay that evolves with the story.  The game will explore gameplay from our favorite
-						 subgenres and push them to their limit to create fun and satisfying platforming.
-					</h3>
-					<br />
-					<br />
-					<h3 class="text-[1em] lg:text-[2em] lg:my-8">Stay tuned for the launch of our Steam page to add it to your wishlist!</h3>
-				</div>
-			</div>  
+	<div class="relative pt-[40px]" style="height:100vh">
+		<img class="absolute object-cover h-full w-full z-[-1]" src="/images/GameBanner.png" alt="Banner"/>
+		<div class="flex justify-center my-24 ">
+			<h2 class="text-yellow-500 lg:text-[5rem] text-8xl">NAME OF GAME</h2>
 		</div>
-		
+		<div class="flex flex-col items-start m-10 bg-backgroundBlack bg-opacity-60 rounded-2xl p-4">
+			<h3 class="text-[4em] lg:text-[2em] lg:my-8 mb-4 font-bold">Glass Arcades' first game in development.</h3>
+			<br />
+			<h3 class="text-[3em] lg:text-[2em] lg:my-8 mb-4">A magical 2D platforming adventure with dynamic gameplay that evolves with the story.  The game will explore gameplay from our favorite
+				 subgenres and push them to their limit to create fun and satisfying platforming.
+			</h3>
+			<br />
+			<br />
+			<h3 class="text-[3em] lg:text-[2em] lg:my-8">Stay tuned for the launch of our Steam page to add it to your wishlist!</h3>
+		</div>
+		<div class="bg-gradient-to-t from-backgroundBlack h-96 w-full absolute bottom-[-44px]">
+
+		</div>
 	</div>
 	
-
 </GamesLayout>
 
 
@@ -44,15 +41,12 @@ import GamesLayout from "../layouts/games-layout.astro";
 	}
 	h2 {
 		font-family: 'poppins';
-		color: #ffffff;
-		font-size: 3.5rem;
 		line-height: 1;
 		text-align: left;
 	}
 	h3 {
 		font-family: 'poppins';
 		color: #ffffff;
-		font-weight: 200;
 		line-height: 1;
 		text-align: left;
 	}

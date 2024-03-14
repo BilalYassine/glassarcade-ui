@@ -12,7 +12,13 @@ module.exports = {
 				'primaryWhite': '#FFFFFF',
 				'primaryBlack': '#151715',
 				'primaryNavy': '#232C47',
+				'backgroundBlack': '#131313'
 			},
+			spacing: {
+				'2/3': '66.66667%',
+				'7/12': '58.333333%',
+				'1/2': '50%'
+			}
 		},
 		screens:{
 			'lg' : '1260px'

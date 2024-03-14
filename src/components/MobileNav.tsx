@@ -41,9 +41,9 @@ export default function MobileHeader(){
                             <img src="/images/GA-Logo.svg" alt="Glass Arcade"/>
                         </div>
                     </a>
-                        <a href="/games" class="font-montserrat text-white text-xl hover:text-primaryRed duration-300">Games</a>
+                        <a href="/games" class="font-montserrat text-white text-2xl hover:text-primaryRed duration-300">Games</a>
 
-                        <a href="/about" class="font-montserrat text-white text-xl hover:text-primaryRed duration-300">About Us</a>
+                        <a href="/about" class="font-montserrat text-white text-2xl hover:text-primaryRed duration-300">About Us</a>
                     {/* <li>
                         <a href="/blog" class="font-montserrat text-white text-xl hover:text-primaryRed duration-300">Blog</a>
                     </li> */}

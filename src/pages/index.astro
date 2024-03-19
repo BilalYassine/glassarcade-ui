@@ -8,48 +8,50 @@ import MainLayout from "../layouts/main-layout.astro";
 
 <MainLayout>
 	<div class="mt-40 mx-6 lg:mx-12">
-		<container>
-					<!-- <div class="leftside"> -->
-				<div class="flex lg:m-8 mx-4 my-0">
-					<h1>GLASS ARCADE</h1>
+		<div>
+			<div>
+				<div class="flex lg:m-10 mx-4 my-10">
+					<h2>GLASS ARCADE</h2>
 				</div>
-				<div class="flex lg:m-8 mx-4 my-10" style="margin-top: -1.5rem;">
-					<h4 class="text-[2em] lg:text-[3em]"> Creating exciting, emotionally relevant gameplay experiences
+				<div class="flex lg:m-10 mx-4 my-10" style="margin-top: -1.5rem;">
+					<h4 class="text-[1em] lg:text-[2em]">A two-person indie game studio with a mission of creating focused experiences
+						that are full of exciting gameplay and are emotionally resonant with our players.
 					</h4>
-				</div>	
-				<divider></divider>
-			<!-- </div> -->
-			<!-- <div class="rightside">
-				<h1>Test</h1>
-			</div> -->
+				</div>
+				<div class="flex items-center w-full mx-10" style="margin-top: -2rem;">
+					<div class="mt-8">
+					  <div class="w-96 lg:w-[800px] h-1 bg-white border-0 rounded"></div>
+					</div>
+			    </div>		
+			</div>
 			<!-- <div class="m-auto h-48 w-48 lg:m-0 lg:h-64 lg:w-64">
 				<img class="align-center" src="./images/wizguy idle.gif" alt="WizGuy"/>
 			</div> -->
-		</container>
+		</div>
 
-		<container>
-			<div class="flex lg:flex-row flex-col items-center justify-start space-x-3 lg:m-10 mx-4 lg:space-y-0">
-				<div>
-					<h3 class="text-[1em] lg:text-[2em]">We're working on our first game, <h3Special>DREAMANIA</h3Special>, a surreal 2D action-adventure platformer about this guy
-					</h3>
-				</div>
-				<!-- Sideways Arrow for Desktop-->
-				<div class="hidden lg:flex">
-					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-				</div>
-				<!-- Down Arrow for Desktop-->
-				<div class="lg:hidden">
-					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
-				</div>
-				<div>
-					<img class="align-center" src="/images/wizguy idle.gif" alt="WizGuy" height="80" width="80"/>
-				</div>
+		  <div class="flex lg:m-10 mx-4 my-10">
+			<h3>Follow us on our journey</h3>
+		</div>
+		<div class="flex lg:flex-row flex-col items-center justify-start space-x-3 lg:m-10 mx-4 mt-10 space-y-4 lg:space-y-0" style="margin-top: -1.5rem;">
+			<div>
+				<h4 class="text-[1em] lg:text-[2em]">We are working on our first game, <h4Special>Dreamania</h4Special>, a surreal 2D action-adventure platformer about this guy
+				</h4>
 			</div>
-		</container>
-		<div class="flex lg:m-4 mx-4">
-			<h2 class="my-0 mx-4">Follow us on our journey</h2>
+			<!-- Sideways Arrow for Desktop-->
+			<div class="hidden lg:flex">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+			</div>
+			<!-- Down Arrow for Desktop-->
+			<div class="lg:hidden">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+			</div>
+			<div>
+				<img class="align-center" src="/images/wizguy idle.gif" alt="WizGuy" height="100" width="100"/>
+			</div>
+		</div>
+		<div class="align-middle" style="margin-top: -2rem;">
 			<div class="lg:flex flex-column lg:flex-row lg:space-x-10">
-			  <div class="basis-1/3 border-2 rounded-2xl border-primaryBlue h-40 w-80 mx-2 my-0 flex flex-col justify-end">
+			  <div class="basis-1/3 border-2 rounded-2xl border-primaryBlue h-40 my-10 flex flex-col justify-end">
 				{/*Instagram and Twitter*/}
 				<ul class="relative flex justify-center items-center w-full h-full mx-auto">
 					<li class="mx-6">
@@ -73,9 +75,9 @@ import MainLayout from "../layouts/main-layout.astro";
 						</a>
 					</li>
 				</ul>
-				<h3Socials class="mb-5 text-[1rem] lg:text-[1.5rem]">Game Updates & Sneak Peeks</h3Socials>
+				<h3Socials class="mb-5 text-[1.5rem] lg:text-[2rem]">Game Updates & Sneak Peeks</h3Socials>
 			  </div>
-			  <div class="basis-1/3 border-2 rounded-2xl border-primaryBlue h-40 w-80 mx-2 my-0 flex flex-col justify-end">
+			  <div class="basis-1/3 border-2 rounded-2xl border-primaryBlue h-40 my-10 flex flex-col justify-end">
 				{/*Youtube and Tik Tok*/}
 				<ul class="relative flex justify-center items-center w-full h-full mx-auto">
 					<li class="mx-6">
@@ -97,9 +99,9 @@ import MainLayout from "../layouts/main-layout.astro";
 						</a>
 					</li>
 				</ul>
-				<h3Socials class="mb-5 text-[1rem] lg:text-[1.5rem]">Dev Logs & Short Form Content</h3Socials>
+				<h3Socials class="mb-5 text-[1.5rem] lg:text-[2rem]">Dev Logs & Short Form Content</h3Socials>
 			  </div>
-			  <div class="basis-1/3 border-2 rounded-2xl border-primaryBlue h-40 w-80 mx-2 my-0 flex flex-col justify-end">
+			  <div class="basis-1/3 border-2 rounded-2xl border-primaryBlue h-40 my-10 flex flex-col justify-end">
 				{/*LinkedIn*/}
 				<ul class="relative flex justify-center items-center w-full h-full mx-auto">
 					<li class="mx-6">
@@ -110,18 +112,22 @@ import MainLayout from "../layouts/main-layout.astro";
 						</a>
 					</li>
 				</ul>
-				<h3Socials class="mb-5 text-[1rem] lg:text-[1.5rem]">Studio Updates</h3Socials>
+				<h3Socials class="mb-5 text-[1.5rem] lg:text-[2rem]">Studio Updates</h3Socials>
 			  </div>
 			</div>
 		  </div>
 		</div>
-	</div>
-		<div class="border-2 rounded-2xl border-primaryRed h-fit mt-10 mx-16 lg:mx-20 flex flex-col justify-end">
+		<div class="border-2 rounded-2xl border-primaryRed h-fit mt-10 mx-6 lg:mx-10 flex flex-col justify-end">
 			<div class="px-10 pt-10 pb-4">
 				<div class='sk-ww-twitch-live-videos' data-embed-id='25380851'></div><script src='https://widgets.sociablekit.com/twitch-live-videos/widget.js' async defer></script>
 			</div>
 			<h3Socials class="mb-5 text-[1.5rem] lg:text-[2rem]">Live Development Streaming on Twitch</h3Socials>
 		</div>
+		<div class="flex items-center w-full mx-10">
+			<div class="mt-8">
+			  <div class="w-96 lg:w-[800px] h-1 bg-white border-0 rounded"></div>
+			</div>
+		</div>	
 		<div class="flex justify-center mt-6 h-fit">
 			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSenZkDkhyyDszvC4bBT0xMjG117ZJUIn2UoCoCFBBPknjWcgg/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 		</div>
@@ -137,24 +143,25 @@ import MainLayout from "../layouts/main-layout.astro";
 	h1 {
 		font-family: 'poppins';
 		color: #ffffff;
-		font-size: 4.5rem;
-		font-weight: 600;
+		font-size: 5rem;
+		font-weight: 400;
 		line-height: 1;
 		text-align: left;
 	}
 	h2 {
 		font-family: 'poppins';
 		color: #ffffff;
-		font-size: 2.75rem;
+		font-size: 3.5rem;
 		font-weight:700;
 		line-height: 1;
+		font-style: ;
 		text-align: left;
 	}
 	h3 {
 		font-family: 'poppins';
 		color: #ffffff;
-		font-size: 1.5rem;
-		font-weight: 200;
+		font-size: 2rem;
+		font-weight: 600;
 		line-height: 1;
 		text-align: left;
 	}
@@ -164,14 +171,6 @@ import MainLayout from "../layouts/main-layout.astro";
 		font-weight: 200;
 		line-height: 1;
 		text-align: center;
-	}
-	h3Special{
-		font-family: 'poppins';
-		color: #ffc90e;
-		font-size: 1.5rem;
-		font-weight: 200;
-		line-height: 1;
-		text-align: left;
 	}
 	h4 {
 		font-family: 'poppins';
@@ -194,23 +193,6 @@ import MainLayout from "../layouts/main-layout.astro";
 		text-align: center;
 		color: #ffffff;
 	}
-	container {
-		display: flex; /* Use flexbox */
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 16vh; /* Make the container take the full height of the viewport */
-  	}
-	content {
-    text-align: center;
-    margin-bottom: 20px; /* Add margin to create space between content and divider */
-  	}
-	divider {
-		width: 50%; /* Set the width of the divider */
-    height: 1px; /* Set the height of the divider */
-    background-color: #ccc; /* Set the color of the divider */
-    margin: 0 auto; /* Center the divider horizontally */
-  	}
 	html {
 		background: #131313;
 		height: 100%;

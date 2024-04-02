@@ -1,5 +1,5 @@
 # glassarcade-ui
-UI Front-end for Glass Arcade
+UI Front-end for Glass Arcade - http://glass-arcade.com/
 
 # Stack
 Astro

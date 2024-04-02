@@ -118,6 +118,7 @@ import MainLayout from "../layouts/main-layout.astro";
 			display: grid;
 			place-items: center;
 			margin-top: 19em;
+			overflow: hidden;
 		}
 		column-red {
 			margin-top: 1em;
@@ -176,13 +177,14 @@ import MainLayout from "../layouts/main-layout.astro";
 			line-height: 1;
 			text-align: center;
 			margin: 0.75em;
+			margin-bottom: 2em;
 		}
 		h3 {
 			font-family: 'poppins';
 			color: #ffffff;
 			font-size: 1.05rem;
 			font-weight: 400;
-			line-height: 1.1;
+			line-height: 1.2;
 			text-align: left;
 		}
 		p{
@@ -212,7 +214,7 @@ import MainLayout from "../layouts/main-layout.astro";
 			width: 100vw;
 		}
 		column-blue {
-			margin-top: 1em;
+			margin-top: 4em;
 			position: relative; /* This makes the .column-red a context for absolutely positioned elements */
 			height: 100vh;
 			width: auto;
@@ -230,7 +232,7 @@ import MainLayout from "../layouts/main-layout.astro";
 			opacity: 0.2;
 		}
 		column-red {
-			margin-top: 1em;
+			margin-top: 4em;
 			position: relative; /* This makes the .column-red a context for absolutely positioned elements */
 			height: 100vh;
 			width: auto;
@@ -253,8 +255,8 @@ import MainLayout from "../layouts/main-layout.astro";
 			justify-content: center;
 			border-color: #ffffff;
 			border-width: 0.1em;
-			width: 24em;
-			height: 26em;
+			width: 25em;
+			height: 27em;
 			margin-left: auto;
 			margin-right: auto;
 			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

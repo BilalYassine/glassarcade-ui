@@ -3,141 +3,297 @@
 import '@fontsource-variable/montserrat';
 import '@fontsource/poppins';
 import { Image } from 'astro:assets';
-import AboutLayout from "../layouts/about-layout.astro";
+import MainLayout from "../layouts/main-layout.astro";
 ---
 
-<AboutLayout>
-	<div class="mt-36 mx-12">
-		<h1>Who Are We?</h1>
-	<div class="lg:w-[85%]  w-[100%] mx-auto mb-8">
-		<h2 class="text-[1.5em] lg:text-[1.5em] mt-8">We're two friends who have been playing games together since we met in high school.  
-			For years, we've been learning 
-			and practicing what goes into creating the experiences we've loved.  
-			With Glass Arcade, we're turning our passion into a living - join us on our journey!  </h2>
-	</div>
-	{/*Desktop - doing this as a quick fix now so that on desktop
-	we can do the more aesthetic picture flip thing but then on 
-	mobile have Bilal's picture be stacked on top of his text*/}
-	<div class="hidden lg:flex justify-center mb-8">
-		<div class="space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
-			<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
-				<img class="m-auto rounded-2xl" src="/images/robbie.png" alt="Robert"/>
-			</div>
-			<div class="bg-[#27282a] border-primaryBlue border-8 lg:mx-auto lg:w-[60%] lg:max-h-fit rounded-2xl">
-				<h3 class="pt-4">Meet Rob</h3>
-				<p class="p-4">I have loved playing video games since I got my first GameCube at 7 years old.  At that time, I would tell people I wanted to be an artist when I grew up.
-					  I have always loved making things and turning my ideas into reality.  For me, designing and developing games has served as the perfect creative outlet; in the same way that I love getting lost in the immersion of a hand crafted
-					  world, I now love getting lost in creating them for others.  As a Co-Founder of Glass Arcade, I am excited to continue bringing my ideas to life 
-					  through the creation of memorable and exciting gaming experiences. <br>
-					  <br>
-					  While I could list inspiring games forever, my favorite indie games are Outer Wilds, Hades, Ori, Celeste, Dead Cells, and Baba Is You.
-				</p>
-			</div>
-		</div>
-	</div>
-	<div class="hidden lg:flex justify-center">
-		<div class=" space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[85%]">
-			<div class="bg-[#27282a] border-primaryRed border-8 lg:mx-auto lg:w-[60%] max-h-fit rounded-2xl">
-				<h3 class="pt-4">Meet Bilal</h3>
-				<p class="p-4">
-					I'm a storyteller at heart with a passion for games - I feel like I've been writing stories and building worlds in my head since I was a kid. I really resonate with the idea that stories are the common ground that we can all connect on.
-					<br>
-					<br>
-					With a professional background in software engineering, I'm finally pursuing my dream of becoming a game developer to blend my love for art and storytelling into immersive experiences. I'm also eager to use this as an opportunity to really grow as an aspiring animator and digital artist to cultivate our own unique style in our games.
-					I'm wildly excited to take this leap & embracing the world of art and storytelling in its most engaging form.
-					<br>
-					<br>
-					Shout-out to some of my favorite games that I've been playing a lot of recently: Dave the Diver, Civilization 6, Doom: Eternal, Cuphead, Baldur's Gate 3, Hollow Knight, Super Smash Bros. Ultimate
-				</p>
-			</div>
-			<div class="w-[60%] lg:w-[40%] m-auto lg:m-0">
-				<img class="m-auto rounded-2xl" src="/images/bibo.png" alt="Bilal"/>
-			</div>
-		</div>
-	</div>
-	{/*Mobile - doing this as a quick fix now so that on desktop
-	we can do the more aesthetic picture flip thing but then on 
-	mobile have Bilal's picture be stacked on top of his text*/}
-	<div class="lg:hidden">
-		<div class="flex justify-center mb-8">
-			<div class="space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[100%]">
-				<div class="w-[100%] lg:w-[40%] m-auto lg:m-0">
-					<img class="m-auto rounded-2xl" src="/images/robbie.png" alt="Robert"/>
-				</div>
-				<div class="bg-[#27282a] border-primaryBlue border-8 lg:mx-auto lg:w-[60%] lg:max-h-fit rounded-2xl">
-					<h3 class="pt-4">Meet Rob</h3>
-					<p class="p-4">I have loved playing video games since I got my first GameCube at 7 years old.  At that time, I would tell people I wanted to be an artist when I grew up.
-							I have always loved making things and turning my ideas into reality.  For me, designing and developing games has served as the perfect creative outlet; in the same way that I love getting lost in the immersion of a hand crafted
-							world, I now love getting lost in creating them for others.  As a Co-Founder of Glass Arcade, I am excited to continue bringing my ideas to life 
-							through the creation of memorable and exciting gaming experiences. <br>
-							<br>
-							While I could list inspiring games forever, my favorite indie games are Outer Wilds, Hades, Ori, Celeste, Dead Cells, and Baba Is You.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="flex justify-center">
-			<div class=" space-y-4 lg:space-y-0 lg:flex lg:justify-center lg:space-x-8 w-[100%]">
-				<div class="w-[100%] lg:w-[40%] m-auto lg:m-0">
-					<img class="m-auto rounded-2xl" src="/images/bibo.png" alt="Bilal"/>
-				</div>
-				<div class="bg-[#27282a] border-primaryRed border-8 lg:mx-auto lg:w-[60%] max-h-fit rounded-2xl">
-					<h3 class="pt-4">Meet Bilal</h3>
-
-					<p class="p-4">
-						I'm a storyteller at heart with a passion for games - I feel like I've been writing stories and building worlds in my head since I was a kid. I really resonate with the idea that stories are the common ground that we can all connect on.
-						<br>
-						<br>
-						With a professional background in software engineering, I'm finally pursuing my dream of becoming a game developer to blend my love for art and storytelling into immersive experiences. I'm also eager to use this as an opportunity to really grow as an aspiring animator and digital artist to cultivate our own unique style in our games.
-						I'm wildly excited to take this leap & embracing the world of art and storytelling in its most engaging form.
-						<br>
-						<br>
-						Shout-out to some of my favorite games that I've been playing a lot of recently: Dave the Diver, Civilization 6, Doom: Eternal, Cuphead, Baldur's Gate 3, Hollow Knight, Super Smash Bros. Ultimate
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-	<br>
-	<br>
-</AboutLayout>
+<MainLayout>
+	<topcontainer>
+		<h1> Meet the Team </h1>
+		<h2title> We're two friends who have been playing games together since we met in high school.  
+			With Glass Arcade, we're turning our passion into a living - join us on our journey!
+		</h2title>
+		<hr>
+	</topcontainer>
+	<twocolumncontainer>
+		<column-blue>
+			<overlay-content-blue>
+					<bio-group>
+						<div class="avatar mb-4">
+							<img class="rounded-2xl" src="/images/robbie.png" alt="Robert"/>
+						</div>
+						<h2>Robert DiSalle</h2>
+						<br/>
+					</bio-group>
+						<aboutus-block class="border-2 rounded-2xl">
+							<div class="container w-full">
+								<h3>I have loved playing video games since I got my first GameCube at 7 years old. At that time, I would tell people I wanted to be an artist when I grew up. I have always loved making things and turning my ideas into reality. For me, designing and developing games has served as the perfect creative outlet; in the same way that I love getting lost in the immersion of a hand crafted world, I now love getting lost in creating them for others. As a Co-Founder of Glass Arcade, I am excited to continue bringing my ideas to life through the creation of memorable and exciting gaming experiences. </h3>
+								<br/>
+								<h3>While I could list inspiring games forever, my favorite indie games are Outer Wilds, Hades, Ori, Celeste, Dead Cells, and Baba Is You.</h3>
+							</div>
+						</aboutus-block>
+			</overlay-content-blue>
+		</column-blue>
+		<column-red>
+			<overlay-content-red>
+					<bio-group>
+						<div class="avatar mb-4">
+							<img class="rounded-2xl" src="/images/bibo.png" alt="Bilal"/>
+						</div>
+						<h2>Bilal Yassine</h2>
+						<br/>
+					</bio-group>
+						<aboutus-block class="border-2 rounded-2xl">
+							<div class="container w-full">
+								<h3>I'm a storyteller at heart with a passion for games - I feel like I've been writing stories and building worlds in my head since I was a kid. I really resonate with the idea that stories are the common ground that we can all connect on.
+									With a professional background in software engineering, I'm finally pursuing my dream of becoming a game developer to blend my love for art and storytelling into immersive experiences. I'm wildly excited to take this leap & embracing the world of art and storytelling in its most engaging form. </h3>
+								<br/>
+								<h3>Some of my favorite games that I've been playing recently: Dave the Diver, Civilization 6, Doom: Eternal, Baldur's Gate 3, Super Smash Bros. Ultimate</h3>
+							</div>
+						</aboutus-block>
+			</overlay-content-red>
+		</column-red>
+	</twocolumncontainer>
+</MainLayout>
 
 
 <style>
-	h1 {
-		font-family: 'poppins';
-		color: #ffffff;
-		font-size: 3rem;
-		font-weight: 600;
-		line-height: 1;
-		text-align: center;
+	/* //////////// Mobile Styles //////////// */
+	@media (max-width: 800px) {
+		h1 {
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 2.5rem;
+			font-weight: 600;
+			line-height: 1;
+			text-align: center;
+		}
+		h2title {
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 1rem;
+			font-weight: 500;
+			line-height: 1;
+			text-align: justify;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+		h2 {
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 2rem;
+			font-weight: 600;
+			line-height: 1;
+			text-align: center;
+		}
+		h3 {
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 0.85rem;
+			font-weight: 400;
+			line-height: 1.1;
+			text-align: left;
+		}
+		p{
+			font-family: 'poppins';
+			font-size: 1.25rem;
+			text-align: left;
+			color: #ffffff;
+		}
+		bold{
+			font-weight: bold;
+		}
+		topcontainer {
+			height: fit-content; /* Example height, adjust as necessary */
+			width: 85%;
+			margin-top: 8em;
+			position: absolute;
+			z-index: 100;
+			left: 50%; /* Position the left edge of .topcontainer at the center of its parent */
+			transform: translateX(-50%); /* Shift .topcontainer back to the left by half of its own width */
+		}
+		twocolumncontainer {
+			display: grid;
+			place-items: center;
+			margin-top: 19em;
+		}
+		column-red {
+			margin-top: 1em;
+		}
+		aboutus-block {
+			display:flex;
+			background-color:rgba(164,160,170, 0.2);
+			justify-content: center;
+			border-color: #ffffff;
+			border-width: 0.1em;
+			width: 20em;
+			height: fit-content;
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		}
+		.avatar {
+			height: 16em;
+			width: 16em;
+			align-self: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.container {
+			margin: 0.6em;
+		}
+		html {
+			background: linear-gradient(90deg, rgba(109,115,134,1) 45%, rgba(114,92,105,1) 55%); 
+		}
 	}
-	h2 {
-		font-family: 'poppins';
-		color: #ffffff;
-		line-height: 1.2;
-		text-align: left;
-	}
-	h3 {
-		font-family: 'poppins';
-		color: #ffffff;
-		font-size: 2.5rem;
-		font-weight: 400;
-		line-height: 1;
-		text-align: center;
-	}
-	p{
-		font-family: 'poppins';
-		font-size: 1.25rem;
-		text-align: left;
-		color: #ffffff;
-	}
-	bold{
-		font-weight: bold;
-	}
-	html {
-		background: #131313;
-		height: 100%;
+
+	/* //////////// Desktop Styles //////////// */
+	@media (min-width: 801px) {
+		h1 {
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 2.75rem;
+			font-weight: 600;
+			line-height: 1;
+			text-align: center;
+		}
+		h2 {
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 1.5rem;
+			font-weight: 600;
+			line-height: 1;
+			text-align: center;
+		}
+		h2title {
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 1.75rem;
+			font-weight: 500;
+			line-height: 1;
+			text-align: center;
+			margin: 0.75em;
+		}
+		h3 {
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 1.05rem;
+			font-weight: 400;
+			line-height: 1.1;
+			text-align: left;
+		}
+		p{
+			font-family: 'poppins';
+			font-size: 1.25rem;
+			text-align: left;
+			color: #ffffff;
+		}
+		bold{
+			font-weight: bold;
+		}
+		topcontainer {
+			height: fit-content; /* Example height, adjust as necessary */
+			width: 80%;
+			margin-top: 10em;
+			position: absolute;
+			z-index: 100;
+			left: 50%; /* Position the left edge of .topcontainer at the center of its parent */
+			transform: translateX(-50%); /* Shift .topcontainer back to the left by half of its own width */
+		}
+		twocolumncontainer {
+			display: grid;
+			place-items: center;
+			grid-template-columns: 1fr 1fr; /* two columns, each taking up 1 fraction of the available space */
+			grid-gap: 10px; /* adjust the gap between the columns */
+			position: relative; /* Ensure the container is positioned relative for absolute positioning of children */
+			width: 100vw;
+		}
+		column-blue {
+			margin-top: 1em;
+			position: relative; /* This makes the .column-red a context for absolutely positioned elements */
+			height: 100vh;
+			width: auto;
+		}
+		column-blue::before {
+			content: ''; /* This is required for the pseudo-element to be generated */
+			position: absolute; /* Position absolutely within .column-red */
+			background-image: url('/images/Glass-Arcade-Logo-Filled-Blue.png');
+			background-repeat: no-repeat;
+			background-size: 55vh;
+			background-position: center;
+			height: 100vh;
+			width: 100%;
+			z-index: -10;
+			opacity: 0.2;
+		}
+		column-red {
+			margin-top: 1em;
+			position: relative; /* This makes the .column-red a context for absolutely positioned elements */
+			height: 100vh;
+			width: auto;
+		}
+		column-red::before {
+			content: ''; /* This is required for the pseudo-element to be generated */
+			position: absolute; /* Position absolutely within .column-red */
+			background-image: url('/images/Glass-Arcade-Logo-Filled-Red.png');
+			background-repeat: no-repeat;
+			background-size: 55vh;
+			background-position: center;
+			height: 100vh;
+			width: 100%;
+			z-index: -10;
+			opacity: 0.2;
+		}
+		aboutus-block {
+			display:flex;
+			background-color:rgba(164,160,170, 0.2);
+			justify-content: center;
+			border-color: #ffffff;
+			border-width: 0.1em;
+			width: 24em;
+			height: 26em;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		}
+		overlay-content-blue {
+			display: flex;
+			justify-content: space-between;
+			height: fit-content;
+			width: 50vw;
+			margin-top: 20em; /* Add margin to create space between content and divider */
+			padding-left: 3em;
+			padding-right: 3em;
+		}
+		overlay-content-red {
+			display: flex;
+			justify-content: space-between;
+			height: fit-content;
+			width: 50vw;
+			margin-top: 20em; /* Add margin to create space between content and divider */
+			padding-left: 3em;
+			padding-right: 3em;
+		}
+		bio-group {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 0.75em;
+			display:flex;
+			flex-direction: column;
+			height: fit-content;
+		}
+		.avatar {
+			height: 22em;
+			width: 22em;
+		}
+		.container {
+			margin: 1em;
+		}
+		html {
+			background: linear-gradient(90deg, rgba(109,115,134,1) 45%, rgba(114,92,105,1) 55%); 
+		}
 	}
 </style>

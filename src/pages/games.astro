@@ -4,16 +4,27 @@ import '@fontsource-variable/montserrat';
 import '@fontsource/poppins';
 import { Image } from 'astro:assets';
 import GamesLayout from "../layouts/games-layout.astro";
+import MainLayout from "../layouts/main-layout.astro";
+
 ---
 
 <GamesLayout>
 	<div class="relative pt-[1px] h-screen">
-		<img class="absolute object-cover h-full w-full z-[-1]" src="/images/GameBanner.gif" alt="Banner"/>
-		<div class="flex justify-center my-48 lg:mx-auto lg:w-[80%]">
-			<img src="/images/Dreamania.png" alt="Banner"/>
+		<img class="absolute object-cover h-full w-full z-[-1]" src="/images/Animated-Website-Banner.gif" alt="Banner"/>
+		<div class="flex justify-center my-48 lg:mx-auto lg:w-[80%] hidden lg:block">
+			<img src="/images/Dream-Runner-Title.png" alt="Banner"/>
+		</div>
+		<div class="flex justify-center my-48 sm:mx-auto sm:w-[80%] lg:hidden sm:block">
+			<img src="/images/Dream-Runner-Mobile-Title.png" alt="Banner"/>
 		</div>
 		<div class="bg-gradient-to-t from-backgroundBlack h-96 w-full absolute bottom-[-44px]">
-
+		</div>
+		<div class="absolute object-cover w-full bottom-0 h-1/4">
+			<h1>A surreal tale of a young wizard rising to the meet the challenge of an emerging threat.</h1>
+			<br>
+			<h1><h1GameTitle>Dream Runner</h1GameTitle> is an ethereal 2D adventure with dynamic gameplay that pushes platforming mechanics to their limits.</h1>
+			<br>
+			<h1>Stay tuned for the launch of our Steam page!</h1>
 		</div>
 	</div>
 	<br>
@@ -21,40 +32,44 @@ import GamesLayout from "../layouts/games-layout.astro";
 
 
 <style>
-	h1 {
-		font-family: 'poppins';
-		color: #ffffff;
-		font-size: 5rem;
-		font-weight: 400;
-		line-height: 1;
-		text-align: left;
+	@media (max-width: 800px) {
+		h1 {
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 0.95rem;
+			font-weight: 400;
+			line-height: 1;
+			text-align: center;
+		}
+		h1GameTitle {
+			font-family: 'poppins';
+			color: #ffc90e;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1;
+			text-align: center;
+		}
 	}
-	h2 {
-		font-family: 'poppins';
-		line-height: 1;
-		text-align: left;
-	}
-	h3 {
-		font-family: 'poppins';
-		color: #ffffff;
-		line-height: 1;
-		text-align: left;
-	}
-	h4 {
-		font-family: 'poppins';
-		color: #ffffff;
-		font-size: 1.25rem;
-		font-weight: 200;
-		line-height: 1;
-		text-align: center;
-	}
-	p{
-		font-size: 1rem;
-		text-align: center;
-		color: #fffff;
+	@media (min-width: 801px) {
+		h1 {
+			font-family: 'poppins';
+			color: #ffffff;
+			font-size: 1.6rem;
+			font-weight: 400;
+			line-height: 1;
+			text-align: center;
+		}
+		h1GameTitle {
+			font-family: 'poppins';
+			color: #ffc90e;
+			font-size: 1.6rem;
+			font-weight: 400;
+			line-height: 1;
+			text-align: center;
+		}
 	}
 	html {
-		background: #131313;
+		background: linear-gradient(90deg, rgba(109,115,134,1) 45%, rgba(114,92,105,1) 55%); 
 		height: 100%;
 	}
 </style>

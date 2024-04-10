@@ -28,7 +28,7 @@ import GoogleForm from "../components/GoogleForm.astro";
 							</div>
 							<div class="Bottom-AboutUs mx-6">
 								<h3>
-									<br> We're currently working on our first game, <h3Special>Dreamania</h3Special>, a surreal 2D action-adventure platformer following this guy
+									<br> We're currently working on our first game, <h3Special>Dream Runner</h3Special>, a surreal 2D adventure platformer following this guy
 								</h3>
 							</div>
 							<div class="Image-AboutUs mx-6 mb-6">
@@ -44,22 +44,22 @@ import GoogleForm from "../components/GoogleForm.astro";
 				<overlay-content-column>
 					<h2>Livestream</h2>
 					<br/>
-						<twitch-block class="basis-1/3 border-2 rounded-2xl">
-							<div class="Image-Twitch mx-6 mb-3">
-								<img class="align-center" src="/images/twitch-logo-2.png" alt="Twitch"/>
-							</div>
-							<h3twitch-block>
-								<h3twitch>
-									Development Logs
-								</h3twitch>
-								<h3twitch>
-									Streaming on Twitch
-								</h3twitch>
-							</h3twitch-block>
-							<a href="https://www.twitch.tv/glassarcade" class="subscribe-button btn btn-hover mt-5 mb-4">
-								Subscribe
-							</a>
-						</twitch-block>
+					<twitch-block class="basis-1/3 border-2 rounded-2xl">
+						<div class="Image-Twitch mx-6 mb-3">
+							<img class="align-center" src="/images/twitch-logo-2.png" alt="Twitch"/>
+						</div>
+						<h3twitch-block>
+							<h3twitch>
+								Development Logs
+							</h3twitch>
+							<h3twitch>
+								Streaming on Twitch
+							</h3twitch>
+						</h3twitch-block>
+						<a href="https://www.twitch.tv/glassarcade" class="subscribe-button btn btn-hover mt-5 mb-4">
+							Subscribe
+						</a>
+					</twitch-block>
 					</div>
 				</overlay-content-column>
 				<overlay-content-column>
@@ -130,7 +130,7 @@ import GoogleForm from "../components/GoogleForm.astro";
 	h3Special{
 		font-family: 'poppins';
 		font-size: 1rem;
-		color: #ffffff;
+		color: #ffc90e;
 		font-weight: 200;
 		line-height: 1;
 		text-align: justify;
@@ -418,9 +418,10 @@ import GoogleForm from "../components/GoogleForm.astro";
 	twitch-block {
 		display:flex;
 		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
 		background-color:rgba(164,160,170, 0.2);
 		justify-content: center;
-		align-items: center;
 		border-color: #ffffff;
 		border-width: 0.1em;
 		width: 20em;
@@ -462,6 +463,7 @@ import GoogleForm from "../components/GoogleForm.astro";
     	position: relative; /* This makes the .column-red a context for absolutely positioned elements */
 		height: 100vh;
 		width: 100%;
+		padding-top: 1.2em;
 	}
 	column-blue::before {
 		content: ''; /* This is required for the pseudo-element to be generated */
@@ -479,6 +481,7 @@ import GoogleForm from "../components/GoogleForm.astro";
     	position: relative; /* This makes the .column-red a context for absolutely positioned elements */
 		height: 100vh;
 		width: 100%;
+		padding-top: 1.2em;
 	}
 	column-red::before {
 		content: ''; /* This is required for the pseudo-element to be generated */

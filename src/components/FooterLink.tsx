@@ -40,7 +40,7 @@ export default function FooterLink(obj: string) {
         height = "40"
     }
     else if (obj["page"] == 'Twitter') {
-        link = "https://twitter.com/glass_arcade0"
+        link = "https://twitter.com/glassarcadedev"
         image = "/images/socials/twitter-icon.svg"
         altText = "Twitter"
         text = ""

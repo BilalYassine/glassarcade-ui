@@ -1,0 +1,130 @@
+---
+import Header from '../components/layout/Header.astro';
+import BackToTop from '../components/layout/BackToTop.astro';
+
+interface Props {
+  description: string;
+  title: string;
+  image?: string;
+}
+
+const { description, title, image } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/Arcade-Icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/Arcade-Icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="twitter:image" content={image} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <!-- <Header client:load /> -->
+    <main>
+      <slot />
+    </main>
+    <BackToTop />
+    <style is:global>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+      body {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.25rem;
+      }
+
+      .sticky-header {
+        @apply fixed z-[9999] bg-red-2/80 dark:bg-blue-2/80 transition;
+        backdrop-filter: blur(5px);
+        box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .sticky-header .navbar-logo {
+        @apply py-2;
+      }
+
+      .sticky-header #navbarToggler span {
+        @apply bg-white;
+      }
+
+      .sticky-header #navbarCollapse li > a {
+        @apply text-white hover:text-red-5 dark:hover:text-blue-5 hover:opacity-100;
+      }
+      #navbarCollapse li .ud-menu-scroll.active {
+        @apply opacity-70;
+      }
+      .sticky-header #navbarCollapse li .ud-menu-scroll.active {
+        @apply text-primary opacity-100;
+      }
+
+      .sticky-header #themeSwitcher span {
+        @apply text-white;
+      }
+
+      .navbarTogglerActive > span:nth-child(1) {
+        @apply top-[7px] rotate-45 transform;
+      }
+      .navbarTogglerActive > span:nth-child(2) {
+        @apply opacity-0;
+      }
+      .navbarTogglerActive > span:nth-child(3) {
+        @apply top-[-8px] rotate-[135deg];
+      }
+
+      .image-gradient-border {
+        position: relative;
+        display: inline-block;
+      }
+
+      .image-gradient-border::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 8px; /* Adjust based on your needs */
+        padding: 4px; /* Adjust based on your needs */
+        background: linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(0, 255, 0, 0.5));
+        -webkit-mask: 
+          linear-gradient(#fff 0 0) content-box, 
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude; /* For Firefox */
+      }
+
+      /* .common-carousel .swiper-button-next:after,
+      .common-carousel .swiper-button-prev:after {
+        @apply hidden;
+      }
+
+      .common-carousel .swiper-button-next,
+      .common-carousel .swiper-button-prev {
+        @apply !static h-12 w-12 rounded-lg bg-white dark:bg-dark shadow-testimonial-btn text-white m-0 ease-out duration-200 hover:bg-primary hover:text-white hover:shadow-none;
+      }
+
+      .common-carousel .swiper-button-next svg,
+      .common-carousel .swiper-button-prev svg {
+        @apply w-auto h-auto;
+      } */
+
+    </style>
+    <script>
+      import "../scripts/stickymenu.js";
+      import "../scripts/dropdown.js";
+      import "../scripts/darkMode.js";
+      import "../scripts/scrolltop.js";
+    </script>
+  </body>
+</html>

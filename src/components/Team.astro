@@ -1,7 +1,7 @@
 ---
 const teams = [
-  {name: "Robert DiSalle", description: "Co-Founder", image: "/assets/team/robbie.png", twitterLink: "https://x.com/AquaRobert", instagramLink: "https://www.instagram.com/robertdisalle",},
-  {name: "Bilal Yassine", description: "Co-Founder", image: "/assets/team/bibo.png", twitterLink: "https://x.com/bilallionaire", instagramLink: "https://www.instagram.com/bilal.yass",},
+  {name: "Robert DiSalle", description: "Co-Founder", image: "/assets/team/robbie.png", twitterLink: "https://x.com/AquaRobert", instagramLink: "https://www.instagram.com/robertdisalle", linkedInLink: "https://www.linkedin.com/in/robert-disalle-4427b5157"},
+  {name: "Bilal Yassine", description: "Co-Founder", image: "/assets/team/bibo.png", twitterLink: "https://x.com/bilallionaire", instagramLink: "https://www.instagram.com/bilal.yass", linkedInLink: "https://www.linkedin.com/in/bilal-yassine-129b28196"},
 ]
 ---
 
@@ -64,6 +64,12 @@ const teams = [
                         d="M13.1135 4.06433C12.799 4.06433 12.5329 4.33046 12.5329 4.64498C12.5329 4.95949 12.799 5.22562 13.1135 5.22562C13.428 5.22562 13.6942 4.95949 13.6942 4.64498C13.6942 4.33046 13.4522 4.06433 13.1135 4.06433Z"
                         fill="" />
                     </svg>
+                  </a>
+                  <a
+                    href={team.linkedInLink}
+                    class="hover:text-primary text-dark-7"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                   </a>
                 </div>
               </div>

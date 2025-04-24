@@ -1,66 +1,52 @@
-<!-- ====== About Section Start -->
-<section
-  id="about"
-  class="bg-red-2 dark:bg-blue-2 pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]"
->
+---
+const teams = [
+  {name: "Robert DiSalle", description: "Co-Founder", image: "/assets/team/robbie.png", twitterLink: "https://x.com/AquaRobert", instagramLink: "https://www.instagram.com/robertdisalle", linkedInLink: "https://www.linkedin.com/in/robert-disalle-4427b5157"},
+  {name: "Bilal Yassine", description: "Co-Founder", image: "/assets/team/bibo.png", twitterLink: "https://x.com/bilallionaire", instagramLink: "https://www.instagram.com/bilal.yass", linkedInLink: "https://www.linkedin.com/in/bilal-yassine-129b28196"},
+]
+---
+
+<!-- ====== Team Section Start -->
+<section id="team" class="bg-lightblack dark:bg-black overflow-hidden pt-20 pb-12 lg:pt-[30px] lg:pb-[30px]">
   <div class="container">
-    <div class="wow fadeInUp" data-wow-delay=".2s">
-      <div class="-mx-4 flex flex-wrap items-center">
-        <div class="w-full px-4 xl:w-1/2">
-          <div class="mb-12 lg:mb-0">
-            <div class="mb-8">
-              <img
-                src="/assets/game/HeaderCapsuleSteam.png"
-                alt="hero"
-                class="mx-auto max-w-[600px] w-full rounded-t-xl rounded-tr-xl"
-              />
-            </div>
-            <p class="rajdhani-medium mb-20 mt-16 w-full text-2xl leading-relaxed text-white max-w-600">
-              Dream Runner is a surreal, 2D adventure platformer following Soma's quest to master his powers and save a friend. 
-              Journey through a beautiful world filled with platforming, puzzles, and secrets.
-            </p>
-            <a
-                href="https://store.steampowered.com/app/3035870/Dream_Runner/"
-                target="_blank"
-                class="rajdhani-regular mb-0 flex items-center gap-4 py-[14px] rounded-md bg-white/[0.12] px-6 text-2xl font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
-              >
-              <img src="/assets/logo/steam-icon.png" alt="steam logo"
-              class="object-cover object-center w-1/6 h-1/2" />
-              <p class="rajdhani-medium w-full text-3xl mt-0 ml-4 leading-relaxed text-white">
-                Wishlist on Steam
-              </p>
-              </a>
-
-            <!-- <div class="mb-1">
-              <img
-                src="/assets/game/ComingSoonGif.gif"
-                alt="hero"
-                class="mx-auto max-w-[600px] w-full rounded-t-xl rounded-tr-xl"
-              />
-            </div> -->
-          </div>
-        </div>
-
-        <div class="w-full px-4 xl:w-1/2">
-          <div class="mb-12 lg:mb-0">
-            <div class="mb-6">
-              <img
-                src="/assets/game/DreamRunnerClip1.gif"
-                alt="hero"
-                class="mx-auto max-w-[600px] w-full rounded-t-xl rounded-tr-xl"
-              />
-            </div>
-            <div class="mb-0">
-              <img
-                src="/assets/game/DreamRunnerClip2.gif"
-                alt="hero"
-                class="mx-auto max-w-[600px] w-full rounded-t-xl rounded-tr-xl"
-              />
-            </div>
-          </div>
+    <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-[20px] text-center">
+            <img
+              src="/assets/game/NewLogo/Main-Capsule-NewLogo.jpg"
+              alt="hero"
+              class="mx-auto max-w-[1200px] mb-[20px] w-full rounded-t-xl rounded-tr-xl"
+            />
+          <h3 class="rajdhani-medium mb-3 text-2xl leading-[1.2] font-bold text-white sm:text-2xl md:text-[24px]">
+            Dream Runner is a fast pixel-art platformer following our character Soma and his quest to reunite with his lost best friend. 
+          </h3>
+          <h3 class="rajdhani-medium mb-3 text-2xl leading-[1.2] font-bold text-white sm:text-2xl md:text-[24px]">
+            The game focused on fast, smooth, “flow-state” platforming split into two main modes: Story Mode & Arcade Mode
+          </h3>
         </div>
       </div>
     </div>
+
+    <div class="w-full px-4">
+      <div class="mb-12 lg:mb-0 flex flex-col lg:flex-row justify-between">
+        <!-- First image -->
+        <div class="mb-6 lg:mb-0 w-full lg:w-1/2 pr-2">
+          <img
+            src="/assets/game/DreamRunnerClip1.gif"
+            alt="hero"
+            class="mx-auto max-w-[600px] w-full rounded-t-xl rounded-tr-xl"
+          />
+        </div>
+        <!-- Second image -->
+        <div class="mb-0 w-full lg:w-1/2 pl-2">
+          <img
+            src="/assets/game/DreamRunnerClip2.gif"
+            alt="hero"
+            class="mx-auto max-w-[600px] w-full rounded-t-xl rounded-tr-xl"
+          />
+        </div>
+      </div>
+    </div>
+    
   </div>
 </section>
-<!-- ====== About Section End -->
+<!-- ====== Team Section End -->

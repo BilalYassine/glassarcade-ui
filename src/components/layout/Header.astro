@@ -1,28 +1,3 @@
----
-const menuitems = [
-  {
-    title: "Home",
-    path: "/#home",
-  },
-  {
-    title: "Game",
-    path: "/#about",
-  },
-  {
-    title: "Team",
-    path: "/#team",
-  },
-  {
-    title: "Contact",
-    path: "/#contact",
-  },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
-];
----
-
 <header class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
   <div class="container">
     <div class="relative -mx-4 flex items-center justify-between">
@@ -32,81 +7,145 @@ const menuitems = [
             id="navbarToggler"
             class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-white focus:ring-2 lg:hidden"
           >
-            <span
-              class="relative my-[6px] block h-[2px] w-[30px] bg-white"
-            ></span>
-            <span
-              class="relative my-[6px] block h-[2px] w-[30px] bg-white"
-            ></span>
-            <span
-              class="relative my-[6px] block h-[2px] w-[30px] bg-white"
-            ></span>
+            <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+            <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+            <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
           </button>
           <nav
             id="navbarCollapse"
-            class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-red-2 dark:bg-blue-2 py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent dark:lg:bg-transparent lg:py-0 lg:px-64 xl:px-80 lg:shadow-none 2xl:px-80"
+            class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-red-2 dark:bg-blue-2 py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent dark:lg:bg-transparent lg:py-0 lg:px-64 xl:px-120 lg:shadow-none 2xl:px-120"
           >
             <ul class="block lg:flex 2xl:ml-20">
-              {
-                menuitems.map((item, index) => {
-                  if(!item.children) {
-                    return (
-                      <li class="group relative">
-                        <a
-                          href={item.path}
-                          class={` ${index}
-                          ${Astro.url.pathname === '/' ? 'rajdhani-regular ud-menu-scroll mx-8 flex py-2  text-xl text-white group-hover:text-white lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10' : 'ud-menu-scroll mx-8 flex py-2 text-white group-hover:text-blue-2 lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 text-white xl:ml-10'}
-                          `}>
-                          {item.title}
-                        </a>
-                      </li>
+              {/* Social Media Links */}
+              <li class="mx-8">
+                <a
+                  href="https://discord.gg/FqKa4eqEun"
+                  class="text-primaryblue hover:text-primaryred duration-300 ease-in-out"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="currentColor"
+                    class="bi bi-discord"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
+                  </svg>
+                </a>
+              </li>
 
-                    )
-                  }
-                
-                  if(item.children) {
-                    return (
-                      <li class="submenu-item group relative">
-                        <a
-                          href={item.path}
-                          class={` ${index}
-                          ${Astro.url.pathname === '/' ? 'rajdhani-regular relative mx-8 flex items-center justify-between py-2 text-xl text-white group-hover:text-white lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10' : 'relative mx-8 flex items-center justify-between py-2 text-white group-hover:text-white lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 xl:ml-10'}
-                          `}>
-                          {item.title}
+              <li class="mx-8">
+                <a
+                  href="https://www.instagram.com/glass_arcade_/"
+                  class="text-primaryblue hover:text-primaryred duration-300 ease-in-out"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="45"
+                    height="45"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-instagram"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
 
-                          <svg class="fill-current ml-2" width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" 
-                            />
-                          </svg>
-                        </a>
+              <li class="mx-8">
+                <a
+                  href="https://x.com/glassarcadedev"
+                  class="text-primaryblue hover:text-primaryred duration-300 ease-in-out"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="45"
+                    height="45"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-twitter"
+                  >
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                  </svg>
+                </a>
+              </li>
 
-                        <div
-                          class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-red-2 dark:bg-blue-2 p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
-                        >
-                          {
-                            item.children.map(item => (
-                              <a
-                                href={item.path}
-                                class="block rounded py-[10px] px-4 text-xl text-white hover:text-red-2 dark:hover:text-blue-2"
-                              >
-                                {item.title}
-                              </a>
-                            ))
-                          }
-                        </div>
-                      </li>
-                    )
-                  }
-                })
-              }
+              <li class="mx-8">
+                <a
+                  href="https://www.twitch.tv/glassarcade"
+                  class="text-primaryblue hover:text-primaryred duration-300 ease-in-out"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="45"
+                    height="45"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-twitch"
+                  >
+                    <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mx-8">
+                <a
+                  href="https://www.linkedin.com/company/glass-arcade/"
+                  class="text-primaryblue hover:text-primaryred duration-300 ease-in-out"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="45"
+                    height="45"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-linkedin"
+                  >
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="justify-end pr-16 flex items-center my-4">
-          <button class="inline-flex cursor-pointer items-center" id="themeSwitcher" >
-            <img src="/assets/logo/Glass-Arcade-Logo-Red.png" alt="logo" class="w-15 h-20 dark:hidden" />
-            <img src="/assets/logo/Glass-Arcade-Logo-Blue.png" alt="logo" class="w-15 h-20 hidden dark:block" />
+          <button class="inline-flex cursor-pointer items-center" id="themeSwitcher">
+            <img
+              src="/assets/logo/Glass-Arcade-Logo-Red.png"
+              alt="logo"
+              class="w-15 h-20 dark:hidden"
+            />
+            <img
+              src="/assets/logo/Glass-Arcade-Logo-Blue.png"
+              alt="logo"
+              class="w-15 h-20 hidden dark:block"
+            />
           </button>
         </div>
       </div>
